@@ -1,0 +1,63 @@
+h1{
+	font-size:40px;
+   font-family:Verdana, Geneva, sans-serif;
+}
+
+#btn1{
+  display: block;
+  border: none;
+  height:40px;
+  width:250px;
+  margin:25px auto;
+/*  padding: 14px 14px; */
+  font-size: 20px;
+
+  cursor: pointer;
+  text-align: center;
+}
+
+#btn2{
+  display: block;
+  border: none;
+  height:40px;
+  width:250px;
+  margin:25px auto;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#btn3,#btn4{
+  display: block;
+  height:30px;
+  width:250px;
+  margin:20px auto;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#homebody{
+   display:block;
+   margin-left:auto;
+   margin-right:auto;
+   height:60%;
+   width:25%;
+   text-align:center;
+   border:20px solid black;
+   padding:150px 0;
+}
+
+body{
+	margin-top:150px;
+}
+
+.back{
+  font-size:100px;
+}
+h2{
+  font-size:50px;
+  margin-bottom:1800px;
+}
+
+

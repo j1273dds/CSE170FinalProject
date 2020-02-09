@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html>
+<head>
+   <title>Lost Items</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="/css/introHCI2.css" rel="stylesheet">
+   <script src="js/introHCI.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<div class="top">
+	<form class="example" action="action_page.php">
+  		<input type="text" placeholder="Search.." name="search">
+  		<button type="submit"><i class="fa fa-search"></i></button>
+	</form>
+<div class="dropdown">
+	  <button class="dropbtn"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+	  <div class="dropdown-content">
+		  <a href="#">Link 1</a>
+		  <a href="#">Link 2</a>
+		  <a href="#">Link 3</a>
+	  </div>
+	</div>
+</div>
+
+<body>
+	<div class="bottom">
+		<button class="back" onclick="window.location.href = '/';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+		<button class="lost" onclick="window.location.href = 'lost';">Lost</button>
+		<button class="found" onclick="window.location.href = 'lost';">Found</button>
+		<button class="plus" onclick="window.location.href = 'post';"><i class="fa fa-plus" aria-hidden="true"></i></button>
+	</div>
+</body>
+
+</html>
+
+
