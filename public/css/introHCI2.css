@@ -1,15 +1,30 @@
 *{
   margin:auto;
 }
-body{
-  overflow:hidden;
+html{
+  overflow: hidden;
+  height:100%;
+
 }
+body{
+  height:100%;
+  overflow:auto;
+}
+.post{
+  margin-top:70px;
+}
+.top{
+    position:fixed;
+    width:100%;
+    background-color: #2196F3;
+    height: 66px;
+  }
 
 .bottom{
     background: black;
     width: 100%;
     height: 71px;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
 }
 
@@ -48,7 +63,7 @@ form.example button {
   padding: 20px;
   background: #2196F3;
   color: white;
-  font-size: 19px;
+  font-size: 18px;
   border: transparent;
   border-left: none; 
   cursor: pointer;
@@ -123,19 +138,27 @@ form.example{
   background-color: #3e8e41;
 }
 .middle{
- margin-top:600px;
+ margin-bottom:150px;
 }
 .middle button{
-    display:block;
+    position:fixed;
+    bottom:80px;    
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 60px;
+    height: 60px;
     background-color: #2196F3;
     color: white;
     font-size: 18px;
     border: transparent;
     border-left: none;
     cursor: pointer;
+
+}
+.individual{
+  margin:10px;
+  padding:10px;
+  border-style: solid;
+  border-width: 1px; 
 }
 
 
