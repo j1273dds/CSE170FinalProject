@@ -10,6 +10,9 @@ body{
   height:100%;
   overflow:auto;
 }
+.post{
+  margin-top:70px;
+}
 .top{
     position:fixed;
     width:100%;
@@ -150,6 +153,12 @@ form.example{
     border-left: none;
     cursor: pointer;
 
+}
+.individual{
+  margin:10px;
+  padding:10px;
+  border-style: solid;
+  border-width: 1px; 
 }
 
 
