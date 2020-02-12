@@ -1,19 +1,25 @@
+* { padding: 0; margin: 0;}
 h2 {
-	font-size: 40px;
-   font-family: Verdana, Geneva, sans-serif;
-   text-align: center;
+    padding-top: 10px;
+	  color: white;
+    height: 60px;
+    background-color: #2196F3;
+    font-size: 40px;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;
 }
 
 h3 {
-	font-size: 20px;
-   font-family: Verdana, Geneva, sans-serif;
+  margin: 40px;
+	font-size: 30px;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 .back button {
   background-color: #2196F3;
-  position: fixed;
+  position: absolute;
   width: 75px;
-  bottom: 10px;
+  bottom: 0px;
   padding: 25px;
   color: white;
   font-size: 18px;
@@ -21,4 +27,23 @@ h3 {
   border-left: none;
   cursor: pointer;
 }
-
+input[type="text"]{
+    margin: auto;
+    font-size: 20px;
+    width: 80%;
+    height: 30px;
+    border-color: #888181;
+    border-width: 0 0 2px;
+    display: block;
+}
+button{
+  font-size:30px;
+  margin:auto;
+  display:block;
+}
+button.sumbit {
+    margin: auto;
+    display: block;
+    border-radius: 6%;
+    font-size: 30px;
+}

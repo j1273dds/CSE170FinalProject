@@ -50,7 +50,7 @@ body{
 form.example input[type=text] {
   padding: 20px;
   font-size: 17px;
-  border: 1px solid grey;
+  border: 1px solid transparent;
   float: left;
   width: 82%;
   background: #f1f1f1;
@@ -58,15 +58,15 @@ form.example input[type=text] {
 
 /* Style the submit button */
 form.example button {
-  float: left;
-  width: 18%;
-  padding: 20px;
-  background: #2196F3;
-  color: white;
-  font-size: 18px;
-  border: transparent;
-  border-left: none; 
-  cursor: pointer;
+    font-size: 25px;
+    float: left;
+    width: 18%;
+    padding-top: 15px;
+    background: #2196F3;
+    color: white;
+    border: transparent;
+    border-left: none;
+    cursor: pointer;
 }
 
 form.example button:hover {
@@ -97,7 +97,7 @@ form.example{
 .dropbtn {
     background-color: #2196F3;
     padding: 16px;
-    font-size: 16px;
+    font-size: 25px;
     border: none;
     width: 75px;
     height: 62px;
@@ -157,8 +157,12 @@ form.example{
 .individual{
   margin:10px;
   padding:10px;
-  border-style: solid;
-  border-width: 1px; 
+  box-shadow:  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+               0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+               0 12.5px 10px rgba(0, 0, 0, 0.06),
+               0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+               0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+               0 100px 80px rgba(0, 0, 0, 0.12); 
 }
 
 
