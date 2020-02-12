@@ -1,33 +1,9 @@
-h1{
+h1 {
 	font-size:40px;
    font-family:Verdana, Geneva, sans-serif;
 }
 
-#btn1{
-  display: block;
-  border: none;
-  height:40px;
-  width:250px;
-  margin:25px auto;
-/*  padding: 14px 14px; */
-  font-size: 20px;
-
-  cursor: pointer;
-  text-align: center;
-}
-
-#btn2{
-  display: block;
-  border: none;
-  height:40px;
-  width:250px;
-  margin:25px auto;
-  font-size: 20px;
-  cursor: pointer;
-  text-align: center;
-}
-
-#btn3,#btn4{
+#btn3, #btn4 {
   display: block;
   height:30px;
   width:250px;
@@ -37,7 +13,7 @@ h1{
   text-align: center;
 }
 
-#homebody{
+#homebody {
    display:block;
    margin-left:auto;
    margin-right:auto;
@@ -48,14 +24,14 @@ h1{
    padding:150px 0;
 }
 
-body{
+body {
 	margin-top:150px;
 }
 
-.back{
+.back {
   font-size:100px;
 }
-h2{
+h2 {
   font-size:50px;
   margin-bottom:1800px;
 }
