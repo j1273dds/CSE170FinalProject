@@ -14,6 +14,7 @@ var found = require('./routes/found');
 var signin = require('./routes/signin');
 var create = require('./routes/create');
 var post = require('./routes/post');
+var add = require('./routes/add');
 
 // Example route
 // var user = require('./routes/user');
@@ -41,11 +42,13 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
-app.get('/lost', lost.viewLF);
+app.get('/lost', lost.view);
 app.get('/found', found.viewLF);
 app.get('/signin', signin.viewLF);
 app.get('/create', create.viewLF);
 app.get('/post', post.viewLF);
+app.get('/add',add.addFriend);
+
 
 // Example route
 // app.get('/users', user.list);
