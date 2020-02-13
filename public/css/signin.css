@@ -1,7 +1,7 @@
 * { padding: 0; margin: 0;}
 h2 {
     padding-top: 10px;
-	  color: white;
+	 color: white;
     height: 60px;
     background-color: #2196F3;
     font-size: 40px;
@@ -11,7 +11,7 @@ h2 {
 
 h3 {
   margin: 40px;
-	font-size: 30px;
+  font-size: 30px;
   font-family: Verdana, Geneva, sans-serif;
 }
 
@@ -27,23 +27,33 @@ h3 {
   border-left: none;
   cursor: pointer;
 }
+
 input[type="text"]{
-    margin: auto;
-    font-size: 20px;
-    width: 80%;
-    height: 30px;
-    border-color: #888181;
-    border-width: 0 0 2px;
-    display: block;
+   margin: auto;
+   font-size: 20px;
+   width: 80%;
+   height: 30px;
+   border-color: #888181;
+   border-width: 0 0 2px;
+   display: block;
 }
-button{
-  font-size:30px;
-  margin:auto;
-  display:block;
+
+button {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #2196F3;
+  color: white;
+  border: transparent;
+  border-left: none;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+  text-align: center;
 }
-button.sumbit {
-    margin: auto;
-    display: block;
-    border-radius: 6%;
-    font-size: 30px;
+
+button.submit {
+  margin: auto;
+  display: block;
+  border-radius: 6%;
+  font-size: 30px;
 }

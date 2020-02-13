@@ -1,23 +1,39 @@
 <!doctype html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="apple-mobile-web-app-capable" content="yes">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="apple-mobile-web-app-capable" content="yes">
 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="css/post.css" rel="stylesheet">
+</head>
 <!------ Include the above in your HEAD tag ---------->
 
+<body>
     <form id="addFriendForm" role="form" method="get" action="/add">
         <h3>Add a lost item</h3>
+
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" class="form-control" id="name" placeholder="Name" name="name">
         </div>
+
         <div class="form-group">
           <label for="description">Description:</label>
           <input type="text" class="form-control" id="description" placeholder="Description" name="description">
         </div>
-         <label for="image">Image:</label>
-         <input type="text" class="form-control" id="image" placeholder="image" name="image">
-        <input type="submit" id="submitBtn" class="btn btn-default" value="Add a lost item"></input>
+
+        <div class="form-group">
+          <label for="image">Image:</label>
+          <input type="text" class="form-control" id="image" placeholder="image" name="image"><br><br>
+          <input type="submit" id="submitBtn" class="btn btn-default" value="Add a lost item"></input>
+        </div>
     </form>
+
+    <div class="back"> 
+	     <button type="submit" onclick="window.location.href = '/lost';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+    </div>   
+
+</body>

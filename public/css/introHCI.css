@@ -7,8 +7,12 @@ h1 {
   display: block;
   height:30px;
   width:250px;
+  background-color: #2196F3;
   margin:20px auto;
   font-size: 20px;
+  color: white;
+  border: transparent;
+  border-left: none;
   cursor: pointer;
   text-align: center;
 }

@@ -71,6 +71,9 @@ form.example button {
 
 form.example button:hover {
   background: #0b7dda;
+  margin-top: -11px;
+  height: 75px;
+  cursor: pointer;
 }
 
 /* Clear floats */
@@ -96,7 +99,7 @@ form.example{
 }
 .dropbtn {
     background-color: #2196F3;
-    padding: 16px;
+    padding: 10px;
     font-size: 25px;
     border: none;
     width: 75px;
@@ -143,6 +146,7 @@ form.example{
 .middle button{
     position:fixed;
     bottom:80px;    
+    left: 175px;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -152,7 +156,7 @@ form.example{
     border: transparent;
     border-left: none;
     cursor: pointer;
-
+    text-align: center;
 }
 .individual{
   margin:10px;
