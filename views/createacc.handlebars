@@ -3,15 +3,32 @@
 <html>
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="js/introHCI.js"></script>
-   <link href="/css/introHCI.css" rel="stylesheet">
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <script src="js/signin.js"></script>
+   <link href="/css/signin.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <title>Create Account</title>
 </head>
 
 <body>
-   <h2>Create Account Filler Page</h2>
-   <a class="back" class="btn btn1" type="button" href="/">
-       Back
-   </a>
+   <h2>Create Account</h2>
+   <div>
+      <form id="signinForm" action="/lost" onsubmit="home()">
+      	<h3>First Name</h3>
+         <input type="text" name="first name" placeholder="First Name">
+         <h3>Last Name</h3>
+         <input type="text" name="last name" placeholder="Last Name">
+         <h3>Email</h3>
+         <input type="text" name="email" placeholder="Email">
+         <h3>Username</h3>
+         <input type="text" name="username" placeholder="Username">
+         <h3>Password</h3>
+         <input type="text" name="password" placeholder="Password" ><br><br>
+         <button type="submit" class="sumbit">Create</button>
+      </form>
+   </div>
+   <div class="back"> 
+	   <button type="submit" onclick="window.location.href = '/';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+   </div>
 </body>
 </html>
