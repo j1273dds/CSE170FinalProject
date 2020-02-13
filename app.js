@@ -47,7 +47,7 @@ app.get('/found', found.viewLF);
 app.get('/signin', signin.viewLF);
 app.get('/create', create.viewLF);
 app.get('/post', post.viewLF);
-app.get('/add',add.addFriend);
+app.get('/add',add.addPost);
 
 
 // Example route
