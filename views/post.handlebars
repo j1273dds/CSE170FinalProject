@@ -14,11 +14,18 @@
 
 <body>
     <form id="addPostForm" role="form" method="get" action="/add">
-        <h3>Add a Lost Item</h3>
+        <h3>Add an Item</h3>
 
         <div class="form-group">
           <label for="name">Name:</label>
           <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+        </div>
+
+        <div class="form-group">
+          <label for="lost item or found item">Lost or Found:</label>
+          <br/>
+          <input type="button" id="LostBtn" class="btn btn-default" value="Lost Item"></input>
+          <input type="button" id="FoundBtn" class="btn btn-default" value="Found Item"></input>
         </div>
 
         <div class="form-group">
@@ -29,7 +36,7 @@
         <div class="form-group">
           <label for="image">Image:</label>
           <input type="file" class="form-control" id="image" placeholder="image" name="image"><br><br>
-          <input type="submit" id="submitBtn" class="btn btn-default" value="Add a lost item"></input>
+          <input type="submit" id="submitBtn" class="btn btn-default" value="Add Item"></input>
         </div>
     </form>
 
