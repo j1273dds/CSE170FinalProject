@@ -8,19 +8,20 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="apple-mobile-web-app-capable" content="yes">
    <link href="/css/introHCI2.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery.js"></script>
    <script src="js/introHCI.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="top">
-		<form class="example" action="action_page.php">
+		<form class="example" action="/lost">
 	  		<input type="text" placeholder="Search.." name="search">
 	  		<button type="submit"><i class="fa fa-search"></i></button>
 		</form>
 		<div class="dropdown">
 		  <button class="dropbtn"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
 		  <div class="dropdown-content">
-		  	  <a href="#">Sort By:</a>
+		  	  <a>Sort By:</a>
 		  	  <a href="#">Closest to Me</a>
 			  <a href="#">Date Posted (Newest)</a>
 			  <a href="#">Date Posted (Oldest)</a>
@@ -29,20 +30,20 @@
 	</div>
 	<div class="post">
 		{{#each posts}}
-		<div class="individual">
-		<img src="{{image}}" class="img-responsive">
-		<h1>{{name}}</h1>
-		<p>{{description}}</p>
-		</div>
+		   <div class="individual">
+		      <img src="{{image}}" class="img-responsive">
+		      <h1>{{name}}</h1>
+		      <p>{{description}}</p>
+		   </div>
 		{{/each}}
 	</div>
 	<div class="middle">
-		<button class="plus" onclick="window.location.href = 'post';"><i class="fa fa-plus" aria-hidden="true"></i></button>
+		<button class="plus" onclick="window.location.href = 'post';"><i class="fa fa-plus" aria-hidden="true"></i>     New Post</button>
 	</div>
 	<div class="bottom">
 			<button class="back" onclick="window.location.href = '/';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
-			<button class="lost" onclick="window.location.href = 'lost';">Lost</button>
-			<button class="found" onclick="window.location.href = 'lost';">Found</button>
+			<button id="lost" class="lost" onclick="switchFtoL()">Lost</button>
+			<button id="found" class="found" onclick="switchLtoF()">Found</button>
 	</div>
 </body>
 

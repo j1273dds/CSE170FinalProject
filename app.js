@@ -16,9 +16,6 @@ var create = require('./routes/create');
 var post = require('./routes/post');
 var add = require('./routes/add');
 
-// Example route
-// var user = require('./routes/user');
-
 var app = express();
 
 // all environments
@@ -47,11 +44,7 @@ app.get('/found', found.viewLF);
 app.get('/signin', signin.viewLF);
 app.get('/create', create.viewLF);
 app.get('/post', post.viewLF);
-app.get('/add',add.addPost);
-
-
-// Example route
-// app.get('/users', user.list);
+app.get('/add', add.addPost);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

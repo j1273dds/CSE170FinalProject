@@ -1,11 +1,12 @@
 var data = require("../data.json");
+var datafound = require("../data-found.json");
 
 exports.addPost = function(request, response) {    
-	// Your code goes here
 	var name = request.query.name;
 	var description = request.query.description;
 	var image = request.query.image;
-	var newFriend = { "name":name , "description":description, "image":image};
-	data.posts.push(newFriend);
+	var newPost = { "name":name , "description":description, "image":image};
+	
+   data.posts.push(newPost);
 	response.render('lost',data);
  }

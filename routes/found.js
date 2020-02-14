@@ -1,3 +1,7 @@
+var data = require('../data-found.json');
+
 exports.viewLF = function(req, res) {
-   res.render('found');
+   res.render('lost', data);
 };
+
+

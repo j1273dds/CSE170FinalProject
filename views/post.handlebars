@@ -8,11 +8,12 @@
    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link href="css/post.css" rel="stylesheet">
+   <script src="js/post.js"></script>
 </head>
 <!------ Include the above in your HEAD tag ---------->
 
 <body>
-    <form id="addFriendForm" role="form" method="get" action="/add">
+    <form id="addPostForm" role="form" method="get" action="/add">
         <h3>Add a Lost Item</h3>
 
         <div class="form-group">
@@ -27,7 +28,7 @@
 
         <div class="form-group">
           <label for="image">Image:</label>
-          <input type="text" class="form-control" id="image" placeholder="image" name="image"><br><br>
+          <input type="file" class="form-control" id="image" placeholder="image" name="image"><br><br>
           <input type="submit" id="submitBtn" class="btn btn-default" value="Add a lost item"></input>
         </div>
     </form>

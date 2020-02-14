@@ -12,6 +12,7 @@ h1 {
   font-size: 20px;
   color: white;
   border: transparent;
+  border-radius: 50px;
   border-left: none;
   cursor: pointer;
   text-align: center;
