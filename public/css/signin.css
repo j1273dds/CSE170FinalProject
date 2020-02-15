@@ -38,6 +38,16 @@ input[type="text"]{
    display: block;
 }
 
+input[type="password"]{
+   margin: auto;
+   font-size: 20px;
+   width: 80%;
+   height: 30px;
+   border-color: #888181;
+   border-width: 0 0 2px;
+   display: block;
+}
+
 button {
   font-size: 20px;
   padding: 10px;
