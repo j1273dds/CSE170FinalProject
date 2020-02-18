@@ -7,14 +7,14 @@
    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link href="css/post.css" rel="stylesheet">
+   <link href="css/account.css" rel="stylesheet">
    <script src="js/post.js"></script>
 </head>
 <!------ Include the above in your HEAD tag ---------->
 
 <body>
     <form id="addPostForm" role="form" method="get" action="/add">
-        <h3>Add an Item</h3>
+        <h3>My Account</h3>
 
         <div class="form-group">
           <label for="name">Name:</label>
@@ -22,24 +22,20 @@
         </div>
 
         <div class="form-group">
-          <label for="lost item or found item">Lost or Found:</label>
-          <br/>
-          <input type="button" id="LostBtn" class="btn btn-default" value="Lost Item"></input>
-          <input type="button" id="FoundBtn" class="btn btn-default" value="Found Item"></input>
+          <label for="picture">Profile Picture:</label>
+          <input type="img" class="form-control" id="picture" placeholder="Choose Profile Picture" name="picture">
         </div>
 
         <div class="form-group">
-          <label for="description">Description:</label>
-          <input type="text" class="form-control" id="description" placeholder="Description" name="description">
+          <label for="lost">My Lost Items:</label>
+          <input type="text" class="form-control" id="lost" placeholder="Lost Items" name="lost">
         </div>
 
         <div class="form-group">
-          <label for="image">Image:</label>
-          <input type="url" class="form-control" id="image" placeholder="image" name="image"><br><br>
-          <label for="newDate"></label>
-          <input type="submit" id="submitBtn" class="btn btn-default" value="Add Item" onclick="date()"></input>
-
+          <label for="found">My Found Items:</label>
+          <input type="type" class="form-control" id="found" placeholder="Found Items" name="found"><br><br>
         </div>
+
     </form>
 
     <div class="back"> 

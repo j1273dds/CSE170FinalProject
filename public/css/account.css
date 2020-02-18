@@ -1,0 +1,30 @@
+h3 {
+   position: relative;
+   text-align: center;
+   margin-top: 0px;
+   padding-top: 15px;
+   color: white;
+   height: 60px;
+   background-color: #2196F3;
+   font-family: Verdana, Geneva, sans-serif;
+}
+
+.form-group {
+   display: block;
+   padding: 10px;
+}
+
+.back button {
+   background-color: #2196F3;
+   position: absolute;
+   width: 75px;
+   bottom: 0px;
+   padding: 25px;
+   color: white;
+   font-size: 18px;
+   border: transparent;
+   border-left: none;
+   cursor: pointer;
+}
+
+

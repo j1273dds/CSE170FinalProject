@@ -39,11 +39,11 @@ body {
 
 .bottom button {
     float: left;
-    width: calc(100%  /3);
-    padding: 25px;
+    width: calc(100%  /4);
+    padding: 27px;
     background-color: #2196F3;
     color: white;
-    font-size: 18px;
+    font-size: 12px;
     border: transparent;
     border-left: none;
     cursor: pointer;
