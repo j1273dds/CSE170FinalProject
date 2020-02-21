@@ -10,6 +10,7 @@ function init() {
          document.getElementById("found").style.backgroundColor = "#0b7dda";
       }
    } 
+   $(".more").click(moreInfo);
 }
 
 
@@ -45,4 +46,10 @@ function switchFtoL() {
    window.location.href = '/lost';
    document.getElementById("lost").style.backgroundColor = "#0b7dda";
    document.getElementById("found").style.backgroundColor = "#2196F3";
+}
+
+// user clicks on down arrow on a post
+function moreInfo(e) {
+   e.preventDefault();
+
 }

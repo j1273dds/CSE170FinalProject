@@ -10,6 +10,7 @@
    <link href="css/account.css" rel="stylesheet">
    <script src="js/post.js"></script>
 </head>
+<<<<<<< HEAD
 {{#each account}}
   <h1>{{firstName}}</h1>
   <h2>{{lastName}}</h2>
@@ -17,5 +18,35 @@
   <p>{{username}}</p>
 {{/each}}
 
+=======
+
+<body>
+    <form id="addPostForm" role="form" method="get" action="/add">
+        <h3>My Account</h3>
+
+        <div id="profilepic"><i class="fa fa-user"></i></div>
+
+        <div class="accinfo">
+          <label for="name">Username: Placeholder</label>
+        </div>
+
+        <div class="accinfo">
+          <label for="lost">My Lost Items: Placeholder</label>
+        </div>
+
+        <div class="accinfo">
+          <label for="found">My Found Items: Placeholder</label>
+        </div>
+
+        <div class="accinfo">
+          <label for="friends">My Friends: Placeholder</label>
+        </div>
+
+    </form>
+
+    <div class="back"> 
+	     <button type="submit" onclick="window.location.href = '/lost';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+    </div>   
+>>>>>>> a874f21a946295ff9e39f5a928484d9eca294ceb
 
 </body>
