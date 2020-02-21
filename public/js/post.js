@@ -1,7 +1,3 @@
-function myFunction() {
-
-}
-
 function lost(){
 	$("#lost_found").val("lost");
 }
