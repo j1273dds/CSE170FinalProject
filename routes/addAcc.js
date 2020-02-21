@@ -1,6 +1,6 @@
 var data = require("../account.json");
 
-exports.addAcc = function(request, response) {    
+exports.addAcc = function(request, response) {   
 	var firstName = request.query.firstName;
 	var lastName = request.query.lastName;
 	var email = request.query.email;
@@ -8,4 +8,4 @@ exports.addAcc = function(request, response) { 
 	var newPost = { "firstName":firstName , "lastName":lastName, "email":email,"username":username};
 	data.account.push(newPost);
 	response.render('account',data);
- }
+}
