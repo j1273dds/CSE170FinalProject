@@ -10,7 +10,7 @@ function init() {
          document.getElementById("found").style.backgroundColor = "#0b7dda";
       }
    } 
-   $(".more").click(moreInfo);
+   $(".post .individual button").click(moreInfo);
 }
 
 
@@ -48,8 +48,30 @@ function switchFtoL() {
    document.getElementById("found").style.backgroundColor = "#2196F3";
 }
 
-// user clicks on down arrow on a post
+
+//var lostposts = require('../../data.json');
+
+var clicked = 0;
+
+// user clicks on more info
 function moreInfo(e) {
    e.preventDefault();
+   var color = document.getElementById("lost").style.backgroundColor;
+   var id = $(this).closest('.individual').attr('id');
 
+   if (clicked == 0) {
+      $("#" + id + " #moreText").html("<p>placeholder info</p>");
+      $("#" + id + " button").html("<i class='fa fa-angle-up'></i>");
+      clicked = 1;
+   } else {
+      $("#" + id + " #moreText").html("<p></p>");
+      $("#" + id + " button").html("<i class='fa fa-angle-down'></i>");
+      clicked = 0;
+   }
+   /*if (color == "rgb(11, 125, 218)") {
+
+   } else {
+   
+   }*/
 }
+
