@@ -24,8 +24,9 @@
         <div class="form-group">
           <label for="lost item or found item">Lost or Found:</label>
           <br/>
-          <input type="button" id="LostBtn" class="btn btn-default" value="Lost Item"></input>
-          <input type="button" id="FoundBtn" class="btn btn-default" value="Found Item"></input>
+          <input type="button" id="LostBtn" class="btn btn-default" value="Lost Item" onclick="lost()"></input>
+          <input type="button" id="FoundBtn" class="btn btn-default" value="Found Item" onclick="found()"></input>
+          <input type="text" class="form-control" id="lost_found" placeholder="lost_found" name="lost_found" style="display:none;"></input>
         </div>
 
         <div class="form-group">
