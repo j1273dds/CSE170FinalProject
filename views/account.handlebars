@@ -10,36 +10,12 @@
    <link href="css/account.css" rel="stylesheet">
    <script src="js/post.js"></script>
 </head>
-<!------ Include the above in your HEAD tag ---------->
+{{#each account}}
+  <h1>{{firstName}}</h1>
+  <h2>{{lastName}}</h2>
+  <p>{{email}}</p>
+  <p>{{username}}</p>
+{{/each}}
 
-<body>
-    <form id="addPostForm" role="form" method="get" action="/add">
-        <h3>My Account</h3>
-
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" class="form-control" id="name" placeholder="Name" name="name">
-        </div>
-
-        <div class="form-group">
-          <label for="picture">Profile Picture:</label>
-          <input type="img" class="form-control" id="picture" placeholder="Choose Profile Picture" name="picture">
-        </div>
-
-        <div class="form-group">
-          <label for="lost">My Lost Items:</label>
-          <input type="text" class="form-control" id="lost" placeholder="Lost Items" name="lost">
-        </div>
-
-        <div class="form-group">
-          <label for="found">My Found Items:</label>
-          <input type="type" class="form-control" id="found" placeholder="Found Items" name="found"><br><br>
-        </div>
-
-    </form>
-
-    <div class="back"> 
-	     <button type="submit" onclick="window.location.href = '/lost';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
-    </div>   
 
 </body>

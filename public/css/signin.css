@@ -68,3 +68,8 @@ form .submit {
   font-size: 20px;
   width: 100px;
 }
+.facebook{
+  margin-top: 10px;
+  justify-content: center;
+  display:flex;
+}

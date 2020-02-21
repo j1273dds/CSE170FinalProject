@@ -2,6 +2,8 @@
 
 <html>
 <head>
+   {{> facebook}}
+   <script src="/js/facebook.js"></script>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="apple-mobile-web-app-capable" content="yes">
    <script src="js/signin.js"></script>
@@ -23,6 +25,9 @@
    </div>
    <div class="back"> 
 	   <button type="submit" onclick="window.location.href = '/';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+   </div>
+   <div class= "facebook">
+      <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
    </div>
 </body>
 </html>
