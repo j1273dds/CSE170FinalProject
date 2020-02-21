@@ -16,6 +16,8 @@ var create = require('./routes/create');
 var post = require('./routes/post');
 var add = require('./routes/add');
 var account = require('./routes/account');
+var addAcc = require('./routes/addAcc');
+
 
 var app = express();
 
@@ -47,6 +49,8 @@ app.get('/create', create.viewLF);
 app.get('/post', post.viewLF);
 app.get('/add', add.addPost);
 app.get('/account', account.viewLF);
+app.get('/addAcc', addAcc.addAcc);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
