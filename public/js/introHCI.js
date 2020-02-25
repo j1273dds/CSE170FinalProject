@@ -3,11 +3,29 @@ $(document).ready(function() {
 })
 
 function init() {
+   // after signing in, change button colors and URL
    if (window.location.href.indexOf('/lost') >= 0) {
       document.getElementById("lost").style.backgroundColor = "#0b7dda";
+      let stateObj = {id:"1"};
+      window.history.replaceState(stateObj, "Lost Items", "/lost");
    } else {
       if (window.location.href.indexOf('/found') >= 0) {
          document.getElementById("found").style.backgroundColor = "#0b7dda";
+         let stateObj = {id:"2"};
+         window.history.replaceState(stateObj, "Found Items", "/found");
+      }
+   } 
+
+   // after adding post, change button color and URL
+   if (window.location.href.indexOf('lost_found=lost') >= 0) {
+      document.getElementById("lost").style.backgroundColor = "#0b7dda";
+      let stateObj = {id:"1"};
+      window.history.replaceState(stateObj, "Lost Items", "/lost");
+   } else {
+      if (window.location.href.indexOf('lost_found=found') >= 0) {
+         document.getElementById("found").style.backgroundColor = "#0b7dda";
+         let stateObj = {id:"2"};
+         window.history.replaceState(stateObj, "Found Items", "/found");
       }
    } 
    $(".post .individual button").click(moreInfo);
@@ -60,7 +78,7 @@ function moreInfo(e) {
    var id = $(this).closest('.individual').attr('id');
 
    if (clicked == 0) {
-      $("#" + id + " #moreText").html("<p>placeholder info</p>");
+      $("#" + id + " #moreText").html("<p>lastseen</p>");
       $("#" + id + " button").html("<i class='fa fa-angle-up'></i>");
       clicked = 1;
    } else {
