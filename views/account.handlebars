@@ -25,21 +25,33 @@
 
         <div id="profilepic"><i class="fa fa-user"></i></div>
 
-        <div class="accinfo">
+        <div class="accinfo1">
           <label for="name">Username: Placeholder</label>
         </div>
 
-        <div class="accinfo">
-          <label for="lost">My Lost Items: Placeholder</label>
+        <div class="accinfo2">
+          <label for="lost">My Lost Items:</label>
+            <div class="lostPost">
+            {{#each lostposts}}
+            <img src="{{image}}" class="img-responsive">
+            <h1>{{name}}</h1>
+            <p>Description: {{description}}</p>
+            <span id="moreText"><p>Last Seen: {{lastseen}}</p><p>Date: {{date}}</p></span>
+            {{/each}}
+          </div>
         </div>
 
-        <div class="accinfo">
-          <label for="found">My Found Items: Placeholder</label>
-        </div>
-
-        <div class="accinfo">
-          <label for="friends">My Friends: Placeholder</label>
-        </div>
+        <div class="accinfo2">
+          <label for="lost">My Lost Items:</label>
+            <div class="lostPost">
+            {{#each foundposts}}
+            <img src="{{image}}" class="img-responsive">
+            <h1>{{name}}</h1>
+            <p>Description: {{description}}</p>
+            <span id="moreText"><p>Last Seen: {{lastseen}}</p><p>Date: {{date}}</p></span>
+            {{/each}}
+          </div>
+        </div>     
 
     </form>
 

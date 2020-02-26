@@ -1,7 +1,6 @@
 var data = require("../data.json");
 var datafound = require("../data-found.json");
 var mylost = require("../mylost.json");
-var myfound = require("../myfound.json");
 
 
 exports.addPost = function(request, response) {  
@@ -17,12 +16,13 @@ exports.addPost = function(request, response) {
       var id = data.posts.slice(-1)[0]['id'] + 1;
       var newPost = { "id":id, "name":name, "description":description, "lastseen":loc, "image":image,"date":date,"contact":contact};
       mylost.lostposts.push(newPost);
+      console.log(mylost);
   		data.posts.unshift(newPost);
 		response.render('lost', data);
 	} else {
       var id = data.posts.slice(-1)[0]['id'] + 1;
       var newPost = { "id":id, "name":name, "description":description, "lastseen":loc, "image":image,"date":date,"contact":contact};
-      myfound.foundposts.push(newPost);
+      mylost.foundposts.push(newPost);
 		datafound.posts.unshift(newPost);
 		response.render('lost', datafound);
 	}
