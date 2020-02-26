@@ -38,4 +38,17 @@ h3 {
    cursor: pointer;
 }
 
+.logout button {
+   position: absolute;
+   background-color: #2196F3;
+   right: 175px;
+   width: 75px;
+   bottom: 100px;
+   padding: 10px;
+   color: white;
+   font-size: 14px;
+   border: transparent;
+   cursor: pointer;
+   text-align: center;
+}
 

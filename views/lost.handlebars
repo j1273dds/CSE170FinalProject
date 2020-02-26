@@ -34,8 +34,9 @@
 		      <img src="{{image}}" class="img-responsive">
 		      <h1>{{name}}</h1>
 		      <p>Description: {{description}}</p>
-		      <p>Last seen: {{lastseen}}
-		      <p>Contact Info: {{contact}}</p>
+		      <!-- Add contact info -->
+            <span id="moreText"><p>Last Seen: {{lastseen}}</p><p>Date: {{date}}</p></span>
+
             <button class="more"><i class="fa fa-angle-down"></i></button>
 		   </div>
 		{{/each}}

@@ -27,6 +27,12 @@ h3 {
    cursor: pointer;
 }
 
+.op {
+   display: inline;
+   float: right;
+   color: gray;
+}
+
 #submitBtn {
    position:relative;
    background-color: #2196F3;
