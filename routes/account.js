@@ -1,3 +1,5 @@
-exports.viewLF = function(req, res) {
-   res.render('account');
+var mylost = require("../mylost.json");
+
+exports.view = function(request, response) {
+	response.render('account',mylost);
 };

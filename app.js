@@ -50,7 +50,7 @@ app.get('/signin', signin.viewLF);
 app.get('/create', create.viewLF);
 app.get('/post', post.viewLF);
 app.get('/add', add.addPost);
-app.get('/account', account.viewLF);
+app.get('/account', account.view);
 app.get('/addAcc', addAcc.addAcc);
 app.get('/sortLost', sortLost.view);
 app.get('/sortFound', sortFound.view);
