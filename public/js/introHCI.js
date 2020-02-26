@@ -67,8 +67,6 @@ function switchFtoL() {
 }
 
 
-//var lostposts = require('../../data.json');
-
 var clicked = 0;
 
 // user clicks on more info
@@ -77,19 +75,16 @@ function moreInfo(e) {
    var color = document.getElementById("lost").style.backgroundColor;
    var id = $(this).closest('.individual').attr('id');
 
+   // display or hide information in span
    if (clicked == 0) {
-      $("#" + id + " #moreText").html("<p>lastseen</p>");
+      $("#" + id + " span").css('display', 'block');
       $("#" + id + " button").html("<i class='fa fa-angle-up'></i>");
       clicked = 1;
    } else {
-      $("#" + id + " #moreText").html("<p></p>");
+      $("#" + id + " span").css('display', 'none');
       $("#" + id + " button").html("<i class='fa fa-angle-down'></i>");
       clicked = 0;
    }
-   /*if (color == "rgb(11, 125, 218)") {
 
-   } else {
-   
-   }*/
 }
 
