@@ -22,19 +22,20 @@
 		  <button class="dropbtn"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
 		  <div class="dropdown-content">
 		  	  <a>Sort By:</a>
-		  	  <a href="#">Closest to Me</a>
-			  <a href="#">Date Posted (Newest)</a>
-			  <a href="#">Date Posted (Oldest)</a>
+			  <a onclick="sortNew()">Date Posted (Newest)</a>
+			  <a onclick="sortOld()" >Date Posted (Oldest)</a>
 	 	  </div>
 		</div>
 	</div>
 	<div class="post">
 		{{#each posts}}
 		   <div class="individual" id="{{id}}">
+		   	  <p id="moreText">{{date}}</p>
 		      <img src="{{image}}" class="img-responsive">
 		      <h1>{{name}}</h1>
-		      <p>{{description}}</p>
-            <p id="moreText"></p>
+		      <p>Description: {{description}}</p>
+		      <p>Last seen: {{lastseen}}
+		      <p>Contact Info: {{contact}}</p>
             <button class="more"><i class="fa fa-angle-down"></i></button>
 		   </div>
 		{{/each}}
@@ -46,7 +47,7 @@
 			<button class="back" onclick="window.location.href = '/';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
 			<button id="lost" class="lost" onclick="switchFtoL()">Lost</button>
 			<button id="found" class="found" onclick="switchLtoF()">Found</button>
-			<button id="account" class="account" onclick="window.location.href = 'account';">Account</button>
+			<button id="account" class="account" onclick="window.location.href = 'account';"><i class="fa fa-user" aria-hidden="true"></i></button>
 	</div>
 </body>
 

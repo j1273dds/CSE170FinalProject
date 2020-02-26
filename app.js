@@ -17,8 +17,10 @@ var post = require('./routes/post');
 var add = require('./routes/add');
 var account = require('./routes/account');
 var addAcc = require('./routes/addAcc');
-
-
+var sortLost = require('./routes/sortLost');
+var sortFound = require('./routes/sortFound');
+var sortNewLost = require('./routes/sortNewLost');
+var sortNewFound = require('./routes/sortNewFound');
 var app = express();
 
 // all environments
@@ -50,6 +52,12 @@ app.get('/post', post.viewLF);
 app.get('/add', add.addPost);
 app.get('/account', account.viewLF);
 app.get('/addAcc', addAcc.addAcc);
+app.get('/sortLost', sortLost.view);
+app.get('/sortFound', sortFound.view);
+app.get('/sortNewLost', sortNewLost.view);
+app.get('/sortNewFound', sortNewFound.view);
+
+
 
 
 http.createServer(app).listen(app.get('port'), function(){

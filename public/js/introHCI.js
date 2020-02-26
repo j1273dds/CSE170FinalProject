@@ -5,11 +5,31 @@ $(document).ready(function() {
 function init() {
    if (window.location.href.indexOf('/lost') >= 0) {
       document.getElementById("lost").style.backgroundColor = "#0b7dda";
-   } else {
-      if (window.location.href.indexOf('/found') >= 0) {
-         document.getElementById("found").style.backgroundColor = "#0b7dda";
-      }
+      document.getElementById("lost").style.borderTop = "5px solid #71e60f";
+
+
    } 
+   if (window.location.href.indexOf('/found') >= 0) {
+      document.getElementById("found").style.backgroundColor = "#0b7dda";
+      document.getElementById("found").style.borderTop = "5px solid #71e60f";
+      
+   }
+   if (window.location.href.indexOf('/sortFound') >= 0) {
+      document.getElementById("found").style.backgroundColor = "#0b7dda";
+      document.getElementById("found").style.borderTop = "5px solid #71e60f";
+   }
+   if (window.location.href.indexOf('/sortLost') >= 0) {
+      document.getElementById("lost").style.backgroundColor = "#0b7dda";
+      document.getElementById("lost").style.borderTop = "5px solid #71e60f";    
+   }
+   if (window.location.href.indexOf('/sortNewLost') >= 0) {
+      document.getElementById("lost").style.backgroundColor = "#0b7dda";
+      document.getElementById("lost").style.borderTop = "5px solid #71e60f";
+   }
+   if (window.location.href.indexOf('/sortNewFound') >= 0) {
+      document.getElementById("found").style.backgroundColor = "#0b7dda";
+      document.getElementById("found").style.borderTop = "5px solid #71e60f";      
+   }            
    $(".post .individual button").click(moreInfo);
 }
 
@@ -40,7 +60,6 @@ function switchLtoF() {
    document.getElementById("found").style.backgroundColor = "#0b7dda";
    document.getElementById("lost").style.backgroundColor = "#2196F3";
 }
-
 // user clicks on Lost
 function switchFtoL() {
    window.location.href = '/lost';
@@ -49,29 +68,53 @@ function switchFtoL() {
 }
 
 
-//var lostposts = require('../../data.json');
 
 var clicked = 0;
+var paragraph;
+var idBefore;
 
 // user clicks on more info
 function moreInfo(e) {
    e.preventDefault();
    var color = document.getElementById("lost").style.backgroundColor;
-   var id = $(this).closest('.individual').attr('id');
+   id = $(this).closest('.individual').attr('id');
 
-   if (clicked == 0) {
-      $("#" + id + " #moreText").html("<p>placeholder info</p>");
+
+   if (clicked == 0) { //display text 
+      $("#" + id + " #moreText").append(paragraph);
       $("#" + id + " button").html("<i class='fa fa-angle-up'></i>");
-      clicked = 1;
-   } else {
+      clicked = 0;
+   } else { //remove text 
       $("#" + id + " #moreText").html("<p></p>");
       $("#" + id + " button").html("<i class='fa fa-angle-down'></i>");
-      clicked = 0;
+      clicked = 1;
    }
-   /*if (color == "rgb(11, 125, 218)") {
-
-   } else {
-   
-   }*/
 }
-
+ function sortOld(){
+  if (window.location.href.indexOf('/lost') >= 0) {
+          window.location.href = '/sortLost'; 
+    } 
+  if (window.location.href.indexOf('/found') >= 0) {
+            window.location.href = '/sortFound'; 
+    }
+  if (window.location.href.indexOf('/sortNewLost') >= 0) {
+            window.location.href = '/sortLost'; 
+    }
+  if (window.location.href.indexOf('/sortNewFound') >= 0) {
+            window.location.href = '/sortFound'; 
+    }           
+ }
+  function sortNew(){
+  if (window.location.href.indexOf('/lost') >= 0) {
+          window.location.href = '/sortNewLost'; 
+    } 
+  if (window.location.href.indexOf('/found') >= 0) {
+          window.location.href = '/sortNewFound'; 
+    } 
+  if (window.location.href.indexOf('/sortFound') >= 0) {
+          window.location.href = '/sortNewFound'; 
+    }
+  if (window.location.href.indexOf('/sortLost') >= 0) {
+          window.location.href = '/sortNewLost'; 
+    }          
+ }
