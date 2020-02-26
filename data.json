@@ -5,42 +5,58 @@
 			"name": "Hydroflask",
 			"description": "black 32oz container",
          "lastseen": "Peterson Hall",
-			"image": "https://upload.wikimedia.org/wikipedia/commons/b/be/HydroFlask_Bottle.jpg"			
+			"image": "https://upload.wikimedia.org/wikipedia/commons/b/be/HydroFlask_Bottle.jpg",
+			"date": "Sun Feb 23 2020 19:25:53 GMT-0800 (Pacific Standard Time)",
+			"contact":"(415)-123-5234"			
 		},
 		{
          "id": 2,
 			"name": "Student ID Card",
 			"description": "has my name on it",
          "lastseen": "Price Center",
-			"image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/2002_TW_SCU_student_ID_rear.jpg"			
+			"image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/2002_TW_SCU_student_ID_rear.jpg",
+			"date":"Sun Feb 23 2020 19:26:53 GMT-0800 (Pacific Standard Time)",
+			"contact":"(415)-123-5234"			
 		},
 		{
          "id": 3,
 			"name": "Lanyard",
 			"description": "red warren college lanyard",
          "lastseen": "Somewhere in Warren",
-			"image": "https://upload.wikimedia.org/wikipedia/commons/9/99/Red_lanyard.jpg"			
+			"image": "https://upload.wikimedia.org/wikipedia/commons/9/99/Red_lanyard.jpg",	
+			"date":"Sun Feb 23 2020 19:23:53 GMT-0800 (Pacific Standard Time)",
+			"contact":"(415)-123-5234"			
+					
 		},
 		{
          "id": 4,
 			"name": "Missing Cat",
 			"description": "white, orange, and brown calico cat",
          "lastseen": "Costa Verde area",
-			"image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Cammie_Cat.jpg"			
+			"image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Cammie_Cat.jpg",
+			"date":"Sun Feb 23 2020 19:26:53 GMT-0800 (Pacific Standard Time)",
+			"contact":"(415)-123-5234"			
+
 		},
 		{
          "id": 5,
 			"name": "Wallet",
 			"description": "brown case with my id in it",
          "lastseen": "201 bus",
-			"image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/A_men%27s_wallet.jpg"
+			"image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/A_men%27s_wallet.jpg",
+			"date":"Sun Feb 23 2020 19:26:53 GMT-0800 (Pacific Standard Time)",
+			"contact":"(415)-123-5234"			
+
 		},
 		{
          "id": 6,
 			"name": "Phone",
 			"description": "rose gold iphone 5s, has a picture of me on the lock screen",
          "lastseen": "a bathroom in revelle",
-			"image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/IPhone_5s.png"
+			"image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/IPhone_5s.png",
+			"date":"Sun Feb 23 2020 19:26:53 GMT-0800 (Pacific Standard Time)",
+			"contact":"(415)-123-5234"			
+			
 		}
 	]
 }

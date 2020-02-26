@@ -6,6 +6,7 @@ function init() {
    // after signing in, change button colors and URL
    if (window.location.href.indexOf('/lost') >= 0) {
       document.getElementById("lost").style.backgroundColor = "#0b7dda";
+      document.getElementById("lost").style.borderTop = "5px solid #71e60f";
       let stateObj = {id:"1"};
       window.history.replaceState(stateObj, "Lost Items", "/lost");
    } else {
@@ -28,6 +29,27 @@ function init() {
          window.history.replaceState(stateObj, "Found Items", "/found");
       }
    } 
+   if (window.location.href.indexOf('/found') >= 0) {
+      document.getElementById("found").style.backgroundColor = "#0b7dda";
+      document.getElementById("found").style.borderTop = "5px solid #71e60f";
+      
+   }
+   if (window.location.href.indexOf('/sortFound') >= 0) {
+      document.getElementById("found").style.backgroundColor = "#0b7dda";
+      document.getElementById("found").style.borderTop = "5px solid #71e60f";
+   }
+   if (window.location.href.indexOf('/sortLost') >= 0) {
+      document.getElementById("lost").style.backgroundColor = "#0b7dda";
+      document.getElementById("lost").style.borderTop = "5px solid #71e60f";    
+   }
+   if (window.location.href.indexOf('/sortNewLost') >= 0) {
+      document.getElementById("lost").style.backgroundColor = "#0b7dda";
+      document.getElementById("lost").style.borderTop = "5px solid #71e60f";
+   }
+   if (window.location.href.indexOf('/sortNewFound') >= 0) {
+      document.getElementById("found").style.backgroundColor = "#0b7dda";
+      document.getElementById("found").style.borderTop = "5px solid #71e60f";      
+   }            
    $(".post .individual button").click(moreInfo);
 }
 
@@ -58,7 +80,6 @@ function switchLtoF() {
    document.getElementById("found").style.backgroundColor = "#0b7dda";
    document.getElementById("lost").style.backgroundColor = "#2196F3";
 }
-
 // user clicks on Lost
 function switchFtoL() {
    window.location.href = '/lost';
@@ -67,13 +88,16 @@ function switchFtoL() {
 }
 
 
+
 var clicked = 0;
+var paragraph;
+var idBefore;
 
 // user clicks on more info
 function moreInfo(e) {
    e.preventDefault();
    var color = document.getElementById("lost").style.backgroundColor;
-   var id = $(this).closest('.individual').attr('id');
+   id = $(this).closest('.individual').attr('id');
 
    // display or hide information in span
    if (clicked == 0) {
@@ -85,6 +109,32 @@ function moreInfo(e) {
       $("#" + id + " button").html("<i class='fa fa-angle-down'></i>");
       clicked = 0;
    }
-
 }
-
+ function sortOld(){
+  if (window.location.href.indexOf('/lost') >= 0) {
+          window.location.href = '/sortLost'; 
+    } 
+  if (window.location.href.indexOf('/found') >= 0) {
+            window.location.href = '/sortFound'; 
+    }
+  if (window.location.href.indexOf('/sortNewLost') >= 0) {
+            window.location.href = '/sortLost'; 
+    }
+  if (window.location.href.indexOf('/sortNewFound') >= 0) {
+            window.location.href = '/sortFound'; 
+    }           
+ }
+  function sortNew(){
+  if (window.location.href.indexOf('/lost') >= 0) {
+          window.location.href = '/sortNewLost'; 
+    } 
+  if (window.location.href.indexOf('/found') >= 0) {
+          window.location.href = '/sortNewFound'; 
+    } 
+  if (window.location.href.indexOf('/sortFound') >= 0) {
+          window.location.href = '/sortNewFound'; 
+    }
+  if (window.location.href.indexOf('/sortLost') >= 0) {
+          window.location.href = '/sortNewLost'; 
+    }          
+ }
