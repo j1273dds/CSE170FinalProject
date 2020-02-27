@@ -6,7 +6,7 @@ function init() {
    // after signing in, change button colors and URL
    if (window.location.href.indexOf('/lost') >= 0) {
       document.getElementById("lost").style.backgroundColor = "#0b7dda";
-      document.getElementById("lost").style.borderTop = "5px solid #71e60f";
+      document.getElementById("lost").style.borderTop = "7px solid #71e60f";
       let stateObj = {id:"1"};
       window.history.replaceState(stateObj, "Lost Items", "/lost");
    } else {
@@ -31,24 +31,24 @@ function init() {
    } 
    if (window.location.href.indexOf('/found') >= 0) {
       document.getElementById("found").style.backgroundColor = "#0b7dda";
-      document.getElementById("found").style.borderTop = "5px solid #71e60f";
+      document.getElementById("found").style.borderTop = "7px solid #fb1010";
       
    }
    if (window.location.href.indexOf('/sortFound') >= 0) {
       document.getElementById("found").style.backgroundColor = "#0b7dda";
-      document.getElementById("found").style.borderTop = "5px solid #71e60f";
+      document.getElementById("found").style.borderTop = "7px solid #fb1010";
    }
    if (window.location.href.indexOf('/sortLost') >= 0) {
       document.getElementById("lost").style.backgroundColor = "#0b7dda";
-      document.getElementById("lost").style.borderTop = "5px solid #71e60f";    
+      document.getElementById("lost").style.borderTop = "7px solid #71e60f";    
    }
    if (window.location.href.indexOf('/sortNewLost') >= 0) {
       document.getElementById("lost").style.backgroundColor = "#0b7dda";
-      document.getElementById("lost").style.borderTop = "5px solid #71e60f";
+      document.getElementById("lost").style.borderTop = "7px solid #71e60f";
    }
    if (window.location.href.indexOf('/sortNewFound') >= 0) {
       document.getElementById("found").style.backgroundColor = "#0b7dda";
-      document.getElementById("found").style.borderTop = "5px solid #71e60f";      
+      document.getElementById("found").style.borderTop = "7px solid #fb1010";      
    }            
    $(".post .individual button").click(moreInfo);
 }
