@@ -10,6 +10,7 @@ var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
 var lost = require('./routes/lost');
+var lost_B = require('./routes/lost_B');
 var found = require('./routes/found');
 var signin = require('./routes/signin');
 var create = require('./routes/create');
@@ -45,6 +46,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/lost', lost.view);
+app.get('/lost_B', lost_B.view);
 app.get('/found', found.viewLF);
 app.get('/signin', signin.viewLF);
 app.get('/create', create.viewLF);
