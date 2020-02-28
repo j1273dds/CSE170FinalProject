@@ -21,8 +21,10 @@
 
 <body>
     <form id="addPostForm" role="form" method="get" action="/add">
-        <h3>My Account</h3>
-
+        <div class="navbar">
+           <button type="submit" onclick="window.location.href = '/lost';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+           <h3>My Account</h3>
+        </div>
         <div id="profilepic"><i class="fa fa-user"></i></div>
 
         <div class="accinfo1">
@@ -44,7 +46,7 @@
         </div>
 
         <div class="accinfo2">
-          <label for="lost">My Lost Items:</label>
+          <label for="lost">My Found Items:</label>
             <div class="lostPost">
             {{#each foundposts}}
             <div class="individual">
@@ -57,11 +59,7 @@
           </div>
         </div>     
 
-    </form>
-
-    <div class="back"> 
-	     <button type="submit" onclick="window.location.href = '/lost';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
-    </div>   
+    </form> 
 
      <div class="logout"> 
 	     <button type="submit" onclick="window.location.href = '/';">Logout</button>

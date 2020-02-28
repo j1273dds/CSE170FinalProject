@@ -34,7 +34,7 @@ body {
 
 .bottom button {
     float: left;
-    width: calc(100% / 4);
+    width: calc(100% / 3);
     padding: 27px;
     background-color: #2196F3;
     color: white;
