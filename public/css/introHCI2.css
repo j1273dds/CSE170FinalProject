@@ -44,9 +44,6 @@ body {
     cursor: pointer;
 
 }
-.bottom button:focus {
-    border-top:5px solid yellow;
-}
 
 
 .back:active {
@@ -218,3 +215,6 @@ form.example{
 .moreText p{
   visibility:hidden;
 }
+button.back {
+/*    padding: 18px;
+*/}
