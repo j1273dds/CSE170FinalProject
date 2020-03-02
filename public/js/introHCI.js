@@ -6,7 +6,8 @@ function init() {
    // after signing in, change button colors and URL
    if (window.location.href.indexOf('/lost') >= 0) {
       document.getElementById("lost").style.backgroundColor = "#0b7dda";
-      document.getElementById("lost").style.borderBottom = "7px solid #fbb810";
+      // document.getElementById("lost").style.borderBottom = "7px solid #fbb810";
+      
       let stateObj = {id:"1"};
       window.history.replaceState(stateObj, "Lost Items", "/lost");
    } else {
@@ -31,24 +32,24 @@ function init() {
    } 
    if (window.location.href.indexOf('/found') >= 0) {
       document.getElementById("found").style.backgroundColor = "#0b7dda";
-      document.getElementById("found").style.borderBottom = "7px solid #fbb810";
+      // document.getElementById("found").style.borderBottom = "7px solid #fbb810";
       
    }
    if (window.location.href.indexOf('/sortFound') >= 0) {
       document.getElementById("found").style.backgroundColor = "#0b7dda";
-      document.getElementById("found").style.borderBottom = "7px solid #fbb810";
+      // document.getElementById("found").style.borderBottom = "7px solid #fbb810";
    }
    if (window.location.href.indexOf('/sortLost') >= 0) {
       document.getElementById("lost").style.backgroundColor = "#0b7dda";
-      document.getElementById("lost").style.borderBottom = "7px solid #fbb810";    
+      // document.getElementById("lost").style.borderBottom = "7px solid #fbb810";    
    }
    if (window.location.href.indexOf('/sortNewLost') >= 0) {
       document.getElementById("lost").style.backgroundColor = "#0b7dda";
-      document.getElementById("lost").style.borderBottom = "7px solid #fbb810";
+      // document.getElementById("lost").style.borderBottom = "7px solid #fbb810";
    }
    if (window.location.href.indexOf('/sortNewFound') >= 0) {
       document.getElementById("found").style.backgroundColor = "#0b7dda";
-      document.getElementById("found").style.borderBottom = "7px solid #fbb810";      
+      // document.getElementById("found").style.borderBottom = "7px solid #fbb810";      
    }            
    $(".post .individual button").click(moreInfo);
 }

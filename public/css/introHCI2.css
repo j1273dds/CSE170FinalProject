@@ -160,7 +160,7 @@ form.example{
 }
 
 .middle {
- margin-bottom:80px;
+ margin-bottom:50px;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -180,7 +180,7 @@ button.plus{
     border-left: none;
     cursor: pointer;
 }
-button#account {
+/*button#account {
     width: 50px;
     float: right;
     position: fixed;
@@ -194,7 +194,7 @@ button#account {
     cursor: pointer;
     background-color: #2196F3;
     border-radius: 50%;
-}
+}*/
 
 .individual {
   margin:10px;
@@ -220,17 +220,20 @@ button#account {
 }
 
 .more {
-   position: relative;
-   float: right;
-   bottom: 50px;
-   height: 40px;
-   width: 40px;
-   font-size: 15px;
-   margin: 7px;
-   text-align: center;
-   border: transparent;
-   color: black;
-   cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    float: right;
+    bottom: 50px;
+    height: 40px;
+    width: 40px;
+    font-size: 15px;
+    margin: 7px;
+    text-align: center;
+    border: transparent;
+    color: black;
+    background-color: #2196F3;
+    cursor: pointer;
+
 }
 .moreText p{
   visibility:hidden;
@@ -238,3 +241,6 @@ button#account {
 button.back {
 /*    padding: 18px;
 */}
+h1{
+  margin-bottom:20px;
+}

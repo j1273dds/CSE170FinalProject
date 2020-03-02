@@ -14,9 +14,9 @@
 </head>
 <body>
 	<div class="top">
-		<form class="example" action="/lost">
+		<form class="example" action="account">
 	  		<input type="text" id="myInput" onkeyup="myFunctionSearch()" placeholder="Search for names.." title="Type in a name">
-	  		<button type="submit"><i class="fa fa-search"></i></button>
+	<button id="account" class="account" onclick="window.location.href = 'account';"><i class="fa fa-user" aria-hidden="true"></i></button>		
 		</form>
 		<div class="dropdown">
 		  <button class="dropbtn"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
@@ -49,7 +49,7 @@
 	</div>
 	<div class="middle">
 		<button class="plus" onclick="window.location.href = 'post';"><i class="fa fa-plus" aria-hidden="true"></i>     New Post</button>
-	<button id="account" class="account" onclick="window.location.href = 'account';"><i class="fa fa-user" aria-hidden="true"></i></button>
+<!-- 	<button id="account" class="account" onclick="window.location.href = 'account';"><i class="fa fa-user" aria-hidden="true"></i></button> -->
 	</div>
 </body>
 
