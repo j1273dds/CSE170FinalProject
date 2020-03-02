@@ -6,7 +6,7 @@ function init() {
    // after signing in, change button colors and URL
    if (window.location.href.indexOf('/lost') >= 0) {
       document.getElementById("lost").style.backgroundColor = "#0b7dda";
-      document.getElementById("lost").style.borderTop = "7px solid #71e60f";
+      document.getElementById("lost").style.borderBottom = "7px solid #fbb810";
       let stateObj = {id:"1"};
       window.history.replaceState(stateObj, "Lost Items", "/lost");
    } else {
@@ -31,24 +31,24 @@ function init() {
    } 
    if (window.location.href.indexOf('/found') >= 0) {
       document.getElementById("found").style.backgroundColor = "#0b7dda";
-      document.getElementById("found").style.borderTop = "7px solid #fb1010";
+      document.getElementById("found").style.borderBottom = "7px solid #fbb810";
       
    }
    if (window.location.href.indexOf('/sortFound') >= 0) {
       document.getElementById("found").style.backgroundColor = "#0b7dda";
-      document.getElementById("found").style.borderTop = "7px solid #fb1010";
+      document.getElementById("found").style.borderBottom = "7px solid #fbb810";
    }
    if (window.location.href.indexOf('/sortLost') >= 0) {
       document.getElementById("lost").style.backgroundColor = "#0b7dda";
-      document.getElementById("lost").style.borderTop = "7px solid #71e60f";    
+      document.getElementById("lost").style.borderBottom = "7px solid #fbb810";    
    }
    if (window.location.href.indexOf('/sortNewLost') >= 0) {
       document.getElementById("lost").style.backgroundColor = "#0b7dda";
-      document.getElementById("lost").style.borderTop = "7px solid #71e60f";
+      document.getElementById("lost").style.borderBottom = "7px solid #fbb810";
    }
    if (window.location.href.indexOf('/sortNewFound') >= 0) {
       document.getElementById("found").style.backgroundColor = "#0b7dda";
-      document.getElementById("found").style.borderTop = "7px solid #fb1010";      
+      document.getElementById("found").style.borderBottom = "7px solid #fbb810";      
    }            
    $(".post .individual button").click(moreInfo);
 }
@@ -137,4 +137,22 @@ function moreInfo(e) {
   if (window.location.href.indexOf('/sortLost') >= 0) {
           window.location.href = '/sortNewLost'; 
     }          
+ }
+ function myFunctionSearch(){
+    var cls = document.getElementsByClassName("individual");
+    len = cls.length;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+
+  // start the index at 0;
+      n = 0;
+  for (; n < len; n++) {
+    a = cls[n].getElementsByTagName("h1")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            cls[n].style.display = "";
+        } else {
+            cls[n].style.display = "none";
+        }
+  }
  }

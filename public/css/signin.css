@@ -11,26 +11,27 @@ h2 {
 
 h3 {
   margin: 25px;
-  font-size: 20px;
+  font-size: 15px;
   font-family: Verdana, Geneva, sans-serif;
 }
 
 .back button {
   background-color: #2196F3;
-  position: absolute;
+  position: fixed;
   width: 75px;
+  height:75px;
   bottom: 0px;
-  padding: 25px;
   color: white;
   font-size: 18px;
   border: transparent;
   border-left: none;
   cursor: pointer;
+  border-radius: 50%;
 }
 
 input[type="text"]{
    margin: auto;
-   font-size: 20px;
+   font-size: 15px;
    width: 80%;
    height: 30px;
    border-color: #888181;
@@ -40,7 +41,7 @@ input[type="text"]{
 
 input[type="password"]{
    margin: auto;
-   font-size: 20px;
+   font-size: 15px;
    width: 80%;
    height: 30px;
    border-color: #888181;
@@ -53,12 +54,15 @@ button {
   padding: 10px;
   background-color: #2196F3;
   color: white;
+  width:150px;
+  height:50px;
   border: transparent;
   border-left: none;
   cursor: pointer;
   margin: auto;
   display: block;
   text-align: center;
+  border-radius: 25px
 }
 
 form .submit {
@@ -68,6 +72,7 @@ form .submit {
   font-size: 20px;
   width: 100px;
 }
+
 .facebook{
   margin-top: 10px;
   justify-content: center;

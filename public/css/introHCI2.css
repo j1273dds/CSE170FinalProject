@@ -1,4 +1,4 @@
-*{
+* {
   margin:auto;
 }
 
@@ -13,7 +13,7 @@ body {
 }
 
 .post {
-  margin-top:70px;
+  margin-top:120px;
 }
 
 .top {
@@ -28,21 +28,25 @@ body {
     width: 100%;
     height: 71px;
     position: fixed;
-    bottom: 0px;
-    background-color:transparent;
+    margin-bottom: 30px;
+    /* bottom: 0px; */
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    margin-top: -6px;
 }
 
 .bottom button {
     float: left;
-    width: calc(100% / 3);
-    padding: 27px;
-    background-color: #2196F3;
+    height: 50px;
+    width: 50%;
+    background-color: #2d6a9a;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     border: transparent;
     border-left: none;
     cursor: pointer;
-
+    font-weight: bold;
 }
 
 
@@ -142,6 +146,7 @@ form.example{
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  background-color: white;
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1}
@@ -162,18 +167,33 @@ form.example{
  width: 100%;
 }
 
-.middle button{
+button.plus{
     position:fixed;
-    bottom: 80px;    
+    bottom: 30px;    
     border-radius: 25px;
     width: 150px;
     height: 50px;
     background-color: #2196F3;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     border: transparent;
     border-left: none;
     cursor: pointer;
+}
+button#account {
+    width: 50px;
+    float: right;
+    position: fixed;
+    bottom: 30px;
+    height: 50px;
+    color: white;
+    font-size: 25px;
+    border: transparent;
+    border-left: none;
+    margin-left: 120px;
+    cursor: pointer;
+    background-color: #2196F3;
+    border-radius: 50%;
 }
 
 .individual {

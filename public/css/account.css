@@ -5,9 +5,6 @@ body{
 }
 h3 {
    display:inline;
-   position: fixed;
-   margin-top: 0px;
-   padding-top: 15px;
    width:80%;
    color: white;
    height: 60px;
@@ -99,4 +96,6 @@ button{
   }
   .navbar{
     width:100%;
+    position:fixed;
+    background-color: #2196F3;
   }

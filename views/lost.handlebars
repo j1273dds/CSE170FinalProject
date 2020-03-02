@@ -15,7 +15,7 @@
 <body>
 	<div class="top">
 		<form class="example" action="/lost">
-	  		<input type="text" placeholder="Search.." name="search">
+	  		<input type="text" id="myInput" onkeyup="myFunctionSearch()" placeholder="Search for names.." title="Type in a name">
 	  		<button type="submit"><i class="fa fa-search"></i></button>
 		</form>
 		<div class="dropdown">
@@ -26,6 +26,12 @@
 			  <a onclick="sortOld()" >Date Posted (Oldest)</a>
 	 	  </div>
 		</div>
+			<div class="bottom">
+<!-- 			<button class="back" onclick="window.location.href = '/';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+ -->			<button id="lost" class="lost" onclick="switchFtoL()">Lost</button>
+			<button id="found" class="found" onclick="switchLtoF()">Found</button>
+<!-- 			<button id="account" class="account" onclick="window.location.href = 'account';"><i class="fa fa-user" aria-hidden="true"></i></button> -->
+	</div>
 	</div>
 	<div class="post">
 		{{#each posts}}
@@ -43,12 +49,7 @@
 	</div>
 	<div class="middle">
 		<button class="plus" onclick="window.location.href = 'post';"><i class="fa fa-plus" aria-hidden="true"></i>     New Post</button>
-	</div>
-	<div class="bottom">
-<!-- 			<button class="back" onclick="window.location.href = '/';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
- -->			<button id="lost" class="lost" onclick="switchFtoL()">Lost</button>
-			<button id="found" class="found" onclick="switchLtoF()">Found</button>
-			<button id="account" class="account" onclick="window.location.href = 'account';"><i class="fa fa-user" aria-hidden="true"></i></button>
+	<button id="account" class="account" onclick="window.location.href = 'account';"><i class="fa fa-user" aria-hidden="true"></i></button>
 	</div>
 </body>
 
