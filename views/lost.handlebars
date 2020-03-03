@@ -13,19 +13,6 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div class="top">
-		<form class="example" action="account">
-	  		<input type="text" id="myInput" onkeyup="myFunctionSearch()" placeholder="Search for names.." title="Type in a name">
-	<button id="account" class="account" onclick="window.location.href = 'account';"><i class="fa fa-user" aria-hidden="true"></i></button>		
-		</form>
-		<div class="dropdown">
-		  <button class="dropbtn"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
-		  <div class="dropdown-content">
-		  	  <a>Sort By:</a>
-			  <a onclick="sortNew()">Date Posted (Newest)</a>
-			  <a onclick="sortOld()" >Date Posted (Oldest)</a>
-	 	  </div>
-		</div>
 			<div class="bottom">
 <!-- 			<button class="back" onclick="window.location.href = '/';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
  -->			<button id="lost" class="lost" onclick="switchFtoL()">Lost</button>
@@ -49,6 +36,19 @@
 	</div>
 	<div class="middle">
 		<button class="plus" onclick="window.location.href = 'post';"><i class="fa fa-plus" aria-hidden="true"></i>     New Post</button>
+		<div class="top plus">
+		<form class="example" action="account">
+	  		<input type="text" id="myInput" onkeyup="myFunctionSearch()" placeholder="Search for names.." title="Type in a name">
+	<button id="account" class="account" onclick="window.location.href = 'account';"><i class="fa fa-user" aria-hidden="true"></i></button>		
+		</form>
+		<div class="dropdown">
+		  <button class="dropbtn"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+		  <div class="dropdown-content">
+		  	  <a>Sort By:</a>
+			  <a onclick="sortNew()">Date Posted (Newest)</a>
+			  <a onclick="sortOld()" >Date Posted (Oldest)</a>
+	 	  </div>
+		</div>
 <!-- 	<button id="account" class="account" onclick="window.location.href = 'account';"><i class="fa fa-user" aria-hidden="true"></i></button> -->
 	</div>
 </body>

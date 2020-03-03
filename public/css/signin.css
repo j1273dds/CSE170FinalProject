@@ -1,12 +1,22 @@
-* { padding: 0; margin: 0;}
-h2 {
-    padding-top: 15px;
-	 color: white;
-    height: 60px;
+* { padding: 0; margin: 0;top:0px;}
+body{
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+.back{
+    width:100%;
+    position:fixed;
     background-color: #2196F3;
-    font-size: 30px;
-    font-family: Verdana, Geneva, sans-serif;
-    text-align: center;
+}
+h2 {
+  display:inline;
+   width:80%;
+   color: white;
+   height: 60px;
+   background-color: #2196F3;
+   font-family: Verdana, Geneva, sans-serif;
+   padding-left: 50px;
 }
 
 h3 {
@@ -16,17 +26,13 @@ h3 {
 }
 
 .back button {
-  background-color: #2196F3;
-  position: fixed;
-  width: 75px;
-  height:75px;
-  bottom: 0px;
-  color: white;
-  font-size: 18px;
-  border: transparent;
-  border-left: none;
-  cursor: pointer;
-  border-radius: 50%;
+    width: 20%;
+    height: 60px;
+    display: inline;
+    background-color: #2196F3;
+    border-color: transparent;
+    color: white;
+    font-size:18px;
 }
 
 input[type="text"]{
@@ -49,7 +55,7 @@ input[type="password"]{
    display: block;
 }
 
-button {
+button.sumbit {
   font-size: 20px;
   padding: 10px;
   background-color: #2196F3;
@@ -77,4 +83,7 @@ form .submit {
   margin-top: 10px;
   justify-content: center;
   display:flex;
+}
+form#signinForm {
+    margin-top: 75px;
 }
