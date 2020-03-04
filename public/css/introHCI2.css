@@ -42,11 +42,11 @@ body {
     width: 50%;
     background-color: #2d6a9a;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     border: transparent;
     border-left: none;
     cursor: pointer;
-    font-weight: bold;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
 
@@ -277,4 +277,5 @@ h1{
   text-align:center;
   color:black;
   font-size:40px;
+  font-family: Verdana, Geneva, sans-serif;
 }
