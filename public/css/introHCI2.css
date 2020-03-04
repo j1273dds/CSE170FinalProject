@@ -223,20 +223,25 @@ button.plus{
 }*/
 
 .individual {
-  margin:10px;
-  padding:10px;
-  box-shadow:  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-               0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-               0 12.5px 10px rgba(0, 0, 0, 0.06),
-               0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-               0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-               0 100px 80px rgba(0, 0, 0, 0.12); 
+    font-size: 15px;
+    text-align:center;
+    background-color: white;
+    margin: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+      0 12.5px 10px rgba(0, 0, 0, 0.06),
+       -1px -16px 17.9px rgba(0, 0, 0, 0.072),
+        -1px -15px 33.4px rgba(0, 0, 0, 0.086),
+         20px 17px 80px rgba(0, 0, 0, 0.12);
 }
 
-.individual p {
+/*.individual p {
    padding-right: 55px;
 }
-
+*/
 .img-responsive {
    max-height: 350px;
 }
@@ -249,14 +254,14 @@ button.plus{
     border-radius: 50%;
     position: relative;
     float: right;
-    bottom: 50px;
+    bottom: 15px;
     height: 40px;
     width: 40px;
-    font-size: 15px;
+    font-size: 25px;
     margin: 7px;
     text-align: center;
     border: transparent;
-    color: black;
+    color: white;
     background-color: #2196F3;
     cursor: pointer;
 
@@ -269,4 +274,7 @@ button.back {
 */}
 h1{
   margin-bottom:20px;
+  text-align:center;
+  color:black;
+  font-size:40px;
 }

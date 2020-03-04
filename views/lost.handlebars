@@ -15,7 +15,7 @@
 <body>
 	<div class="top">
 		<form class="example" action="account">
-	  		<input type="text" id="myInput" onkeyup="myFunctionSearch()" placeholder="Search for names.." title="Type in a name">
+	  		<input type="text" id="myInput" onkeyup="myFunctionSearch()" placeholder="Search for items.." title="Type in a name">
 	<button id="account" class="account" onclick="window.location.href = 'account';"><i class="fa fa-user" aria-hidden="true"></i></button>		
 		</form>
 		<div class="dropdown">
@@ -39,6 +39,7 @@
 		   	  <p id="moreText">{{date}}</p>
 		      <img src="{{image}}" class="img-responsive">
 		      <h1>{{name}}</h1>
+		      <a href = "tel:{{contact}}" style= "padding:5px;">Phone number: {{contact}}</a>
 		      <p>Description: {{description}}</p>
 		      <!-- Add contact info -->
             <span id="moreText"><p>Last Seen: {{lastseen}}</p><p>Date: {{date}}</p></span>

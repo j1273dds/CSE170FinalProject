@@ -4,13 +4,13 @@ body{
   overflow: auto;
 }
 h3 {
-   display:inline;
    width:80%;
    color: white;
    height: 60px;
    background-color: #2196F3;
    font-family: Verdana, Geneva, sans-serif;
    padding-left: 50px;
+   display:inline;
 
 }
 
@@ -21,7 +21,6 @@ h3 {
    font-size: 75px;
    text-align: center;
    z-index: -1;
-
  }
 
 
@@ -72,10 +71,14 @@ h3 {
 .accinfo1 {
     margin-top: 10px;
     margin-left:20px;
+    text-align:center;
 }
 .img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img
 {
-   height:100px;
+    height:187px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .individual {
     background-color: #d0d0d0;
@@ -98,4 +101,20 @@ button{
     width:100%;
     position:fixed;
     background-color: #2196F3;
+    top:0px;
   }
+.img{
+    margin-top:70px;
+
+}
+.img img{
+  vertical-align: middle;
+  border-radius: 50%;
+  border: 4px black;
+  border-style: solid;
+}
+label{
+  display:block;
+    margin: 20px;
+    font-size: 16px;
+}

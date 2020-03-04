@@ -54,7 +54,15 @@ input[type="password"]{
    border-width: 0 0 2px;
    display: block;
 }
-
+input[type="tel"]{
+   margin: auto;
+   font-size: 15px;
+   width: 80%;
+   height: 30px;
+   border-color: #888181;
+   border-width: 0 0 2px;
+   display: block;
+}
 button.sumbit {
   font-size: 20px;
   padding: 10px;
@@ -86,4 +94,13 @@ form .submit {
 }
 form#signinForm {
     margin-top: 75px;
+}
+input#image{
+    margin: auto;
+   font-size: 15px;
+   width: 80%;
+   height: 30px;
+   border-color: #888181;
+   border-width: 0 0 2px;
+   display: block;
 }

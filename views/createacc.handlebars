@@ -14,6 +14,8 @@
    <h2>Create Account</h2>
    <div>
       <form id="signinForm" action="/addAcc" onsubmit="home()">
+         <h3>Profile image</h3>
+         <input type="url" class="form-control" id="image" placeholder="image" name="image">
       	<h3>First Name</h3>
          <input type="text" name="firstName" placeholder="First Name">
          <h3>Last Name</h3>
@@ -21,7 +23,7 @@
          <h3>Email</h3>
          <input type="text" name="email" placeholder="user@email.com">
          <h3>Phone Number</h3>
-         <input type="text" name="phone" placeholder="123-456-7890">
+         <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="format:xxx-xxx-xxxx">
          <h3>Username</h3>
          <input type="text" name="username" placeholder="Username">
          <h3>Password</h3>
