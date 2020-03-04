@@ -17,11 +17,11 @@
            <h3>My Account</h3>
         </div>
         <div id="profilepic"><i class="fa fa-user"></i></div>
-
+        {{#each account}}
         <div class="accinfo1">
-          <label for="name">Username: Placeholder</label>
+          <label for="name">Username: {{username}}</label>
         </div>
-
+        {{/each}}
         <div class="accinfo2">
           <label for="lost">My Lost Items:</label>
             <div class="lostPost">

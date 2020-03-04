@@ -1,12 +1,11 @@
 h3 {
-   position: relative;
-   text-align: center;
-   margin-top: 0px;
-   padding-top: 15px;
+  display:inline;
+   width:80%;
    color: white;
    height: 60px;
    background-color: #2196F3;
    font-family: Verdana, Geneva, sans-serif;
+   padding-left: 50px;
 }
 
 .form-group {
@@ -15,16 +14,18 @@ h3 {
 }
 
 .back button {
-   background-color: #2196F3;
-   position: absolute;
-   width: 75px;
-   bottom: 0px;
-   padding: 25px;
-   color: white;
-   font-size: 18px;
-   border: transparent;
-   border-left: none;
-   cursor: pointer;
+    width: 20%;
+    height: 60px;
+    display: inline;
+    background-color: #2196F3;
+    border-color: transparent;
+    color: white;
+    font-size:18px;
+}
+.back{
+    width:100%;
+    position:fixed;
+    background-color: #2196F3;
 }
 
 .op {
@@ -38,6 +39,9 @@ h3 {
    float: right;
    background-color: #2196F3;
    color: white;
+}
+form#addPostForm{
+   padding-top:80px;
 }
    
 

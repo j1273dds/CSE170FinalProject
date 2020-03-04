@@ -12,12 +12,11 @@
 </head>
 
 <body>
-    <form id="addPostForm" role="form" method="get" action="/add">
-        <div class="navbar">
-           <button type="submit" onclick="window.location.href = '/lost';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+          <div class="back">
+           <button onclick="window.location.href = '/lost';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
            <h3>My Account</h3>
         </div>
-
+    <form id="addPostForm" role="form" method="get" action="/add">
         <div class="form-group">
           <label for="name">Item Name:</label>
           <input type="text" class="form-control" id="name" placeholder="Item Name" name="name">
@@ -54,9 +53,4 @@
           <input type="submit" id="submitBtn" class="btn btn-default" value="Add Item" onclick="date()"></input>
         </div>
     </form>
-
-<!--     <div class="back"> 
-	     <button type="submit" onclick="window.location.href = '/lost';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
-    </div>    -->
-
 </body>
