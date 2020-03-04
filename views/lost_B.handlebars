@@ -13,21 +13,13 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div class="top">
-		<form class="example" action="/lost">
-	  		<input type="text" placeholder="Search.." name="search">
-	  		<button type="submit"><i class="fa fa-search"></i></button>
-		</form>
-		<div class="dropdown">
-		  <button class="dropbtn"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
-		  <div class="dropdown-content">
-		  	  <a>Sort By:</a>
-			  <a onclick="sortNew()">Date Posted (Newest)</a>
-			  <a onclick="sortOld()" >Date Posted (Oldest)</a>
-	 	  </div>
-		</div>
+	<div class="bottom">
+<!-- 			<button class="back" onclick="window.location.href = '/';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+ -->			<button id="lost" class="lost" onclick="switchFtoL()" style="height:70px;">Lost</button>
+			<button id="found" class="found" onclick="switchLtoF()" style="height:70px;">Found</button>
+<!-- 			<button id="account" class="account" onclick="window.location.href = 'account';"><i class="fa fa-user" aria-hidden="true"></i></button> -->
 	</div>
-	<div class="post">
+	<div class="post" style="margin-top:100px;">
 		{{#each posts}}
 		   <div class="individual" id="{{id}}">
 		   	  <p id="moreText">{{date}}</p>
@@ -42,16 +34,30 @@
 		{{/each}}
 	</div>
 	<div class="middle">
-		<button class="plus" onclick="window.location.href = 'post';"><i class="fa fa-plus" aria-hidden="true"></i>     New Post</button>
+		<button class="plus" onclick="window.location.href = 'post';" style="bottom:80px"><i class="fa fa-plus" aria-hidden="true"></i>     New Post</button>
+			<div class="top" style="bottom:-5px">
+		<form class="example" action="/lost">
+	  		<input type="text" id="myInput" onkeyup="myFunctionSearch()" placeholder="Search for names.." title="Type in a name">
+	  		<button type="submit"><i class="fa fa-search"></i></button>
+		</form>
+		<div class="dropup" style="display:none; position: relative; display: inline-block; float: left; width: 15%;">
+		  <button class="dropbtn"><i class="fa fa-caret-up" aria-hidden="true"></i></button>
+		  <div class="dropup-content">
+		  	  <a>Sort By:</a>
+			  <a onclick="sortNew()">Date Posted (Newest)</a>
+			  <a onclick="sortOld()" >Date Posted (Oldest)</a>
+	 	  </div>
+		</div>
+	</div>
 	</div>
 	<div class="bottom">
-			<button class="back" onclick="window.location.href = '/';">
+<!-- 			<button class="back" onclick="window.location.href = '/';">
 				<i class="fa fa-arrow-left" aria-hidden="true"></i>
 				Login
 			</button>
 			<button id="lost" class="lost" onclick="switchFtoL()">Lost</button>
 			<button id="found" class="found" onclick="switchLtoF()">Found</button>
-			<button id="account" class="account" onclick="window.location.href = 'account';"><i class="fa fa-user" aria-hidden="true"></i></button>
+			<button id="account" class="account" onclick="window.location.href = 'account';"><i class="fa fa-user" aria-hidden="true"></i></button> -->
 	</div>
 </body>
 
