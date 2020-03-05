@@ -20,7 +20,7 @@ body {
     position:fixed;
     width:100%;
     background-color: #2196F3;
-    height: 66px;
+    height: 70px;
     z-index: 1;
 }
 
@@ -45,8 +45,6 @@ body {
     border: transparent;
     border-left: none;
     cursor: pointer;
-    margin-top: -5px;
-
 }
 
 
