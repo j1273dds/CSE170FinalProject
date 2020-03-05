@@ -33,20 +33,20 @@ body {
     background-color: transparent;
     display: flex;
     justify-content: center;
-    margin-top: -6px;
 }
 
 .bottom button {
     float: left;
-    height: 50px;
+    height: 42px;
     width: 50%;
-    background-color: #2196F3;
+    background-image: linear-gradient(#2196F3,#68a4c5);
     color: white;
-    font-size: 25px;
+    font-size: 17px;
     border: transparent;
     border-left: none;
     cursor: pointer;
-    font-family: Verdana, Geneva, sans-serif;
+    margin-top: -5px;
+
 }
 
 
@@ -60,12 +60,14 @@ body {
 
 /* Style the search field */
 form.example input[type=text] {
-  padding: 20px;
+  padding: 15px;
   font-size: 17px;
   border: 1px solid transparent;
   float: left;
   width: 82%;
   background: #f1f1f1;
+  margin-top:4px;
+  border-radius: 50px;
 }
 
 /* Style the submit button */
@@ -120,7 +122,7 @@ form.example{
     font-size: 25px;
     border: none;
     width: 75px;
-    height: 62px;
+    height: 56px;
     cursor: pointer;
     color: white;
     width: 100%;}
@@ -178,8 +180,8 @@ form.example{
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
+/*  background-color: #3e8e41;
+*/}
 
 .dropup:hover .dropbtn {
   background-color: #3e8e41;
@@ -224,9 +226,7 @@ button.plus{
 
 .individual {
     font-size: 15px;
-    text-align:center;
     background-color: white;
-    margin: 20px;
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 40px;
@@ -236,6 +236,10 @@ button.plus{
        -1px -16px 17.9px rgba(0, 0, 0, 0.072),
         -1px -15px 33.4px rgba(0, 0, 0, 0.086),
          20px 17px 80px rgba(0, 0, 0, 0.12);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 4px;
+    margin-left:4px;
 }
 
 /*.individual p {
@@ -279,3 +283,6 @@ h1{
   font-size:40px;
   font-family: Verdana, Geneva, sans-serif;
 }
+::placeholder{
+  color:#2196F3;
+  }
