@@ -255,17 +255,17 @@ button.plus{
 }
 
 .more {
+    border-radius: 50%;
     position: relative;
     float: right;
     bottom: 15px;
     height: 40px;
     width: 40px;
     font-size: 25px;
-    margin: 7px;
     text-align: center;
-    color: black;
     border: transparent;
-    background-color: white;
+    color: white;
+    background-color: #2196F3;
     cursor: pointer;
 }
 .moreText p{
