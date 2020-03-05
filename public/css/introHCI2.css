@@ -255,7 +255,6 @@ button.plus{
 }
 
 .more {
-    border-radius: 50%;
     position: relative;
     float: right;
     bottom: 15px;
@@ -264,11 +263,10 @@ button.plus{
     font-size: 25px;
     margin: 7px;
     text-align: center;
+    color: black;
     border: transparent;
-    color: white;
-    background-color: #2196F3;
+    background-color: white;
     cursor: pointer;
-
 }
 .moreText p{
   visibility:hidden;
