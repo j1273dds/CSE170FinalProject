@@ -267,9 +267,10 @@ button.plus{
     width: 40px;
     font-size: 25px;
     border: transparent;
-    color: white;
-    background-color: #2196F3;
+    color: black;
+    background-color: transparent;
     cursor: pointer;
+    text-align: center;
 }
 .moreText p{
   visibility:hidden;
