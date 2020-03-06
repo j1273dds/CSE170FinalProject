@@ -1,3 +1,8 @@
+input {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
 * {
   margin:auto;
 }
@@ -10,6 +15,7 @@ html {
 body {
   height: 100%;
   overflow: auto;
+  background-color: #68a4c5;
 }
 
 .post {
@@ -82,13 +88,13 @@ form.example button {
     cursor: pointer;
 }
 
-form.example button:hover {
+/*form.example button:hover {
   position: relative;
   background: #0b7dda;
   margin-top: -11px;
   height: 75px;
   cursor: pointer;
-}
+}*/
 
 /* Clear floats */
 form.example::after {
