@@ -8,15 +8,6 @@ body{
     width:100%;
     position:fixed;
 }
-h2 {
-  display:inline;
-   width:80%;
-   color: black;
-   height: 60px;
-   background-color: #2196F3;
-   font-family: Verdana, Geneva, sans-serif;
-   padding-left: 50px;
-}
 
 h3 {
   margin: 25px;
@@ -34,6 +25,17 @@ h3 {
     border-color: transparent;
     color: #2196F3;
     font-size:18px;
+}
+
+input[type="file"]{
+   margin: auto;
+   font-size: 15px;
+   width: 70%;
+   height: 30px;
+   border-color: transparent;
+   display: block;
+   padding:10px;
+   border-bottom:2px solid #2196F3;
 }
 
 input[type="text"]{
@@ -77,9 +79,17 @@ button.sumbit {
 form .submit {
   margin: auto;
   display: block;
-  border-radius: 30px;
+  border-radius: 25px;
   font-size: 20px;
-  width: 100px;
+  width: 250px;
+  padding: 10px;
+  background-color: #2196F3;
+  color: white;
+  height: 50px;
+  border-left: none;
+  cursor: pointer;
+  text-align: center;
+  border: transparent;
 }
 
 .facebook{
@@ -91,7 +101,7 @@ form#signinForm {
     margin-top: 75px;
 }
 input#image{
-    margin: auto;
+   margin: auto;
    font-size: 15px;
    width: 80%;
    height: 30px;
