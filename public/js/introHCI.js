@@ -143,3 +143,14 @@ function moreInfo(e) {
         }
   }
  }
+ function myFunctionShow(){
+    var search = document.getElementById('myInput');
+    var header = document.getElementById('maintext');
+
+    if(search.style.display == "none"){
+      search.style.display = "inline";
+    }
+    else{
+      search.style.display= "none";
+    }
+  }
