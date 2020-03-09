@@ -23,10 +23,11 @@
 <body>
 	<div class="top">
 		<form class="example" action="account">
-	  		<input type="text" id="myInput" onkeyup="myFunctionSearch()" placeholder="Search for items.." title="Type in a name">
-	<button id="account" class="account" onclick="window.location.href = 'account';"><i class="fa fa-user" aria-hidden="true"></i></button>		
+	  		 <input type="text" id="myInput" onkeyup="myFunctionSearch()" placeholder="Search for items.." title="Type in a name">
+	  		 <button type = "button" class="search" onclick="myFunctionShow()"><i class="fa fa-search"></i></button>
+			 <button id="account" class="account" onclick="window.location.href = 'account';"><i class="fa fa-user" aria-hidden="true"></i></button>
 		</form>
-		<div class="dropdown">
+		<div class="dropdown"> 
 		  <button class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
 		  <div class="dropdown-content">
 		  	  <a>Sort By:</a>
@@ -35,22 +36,20 @@
 	 	  </div>
 		</div>
 			<div class="bottom">
-<!-- 			<button class="back" onclick="window.location.href = '/';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
- -->			<button id="lost" class="lost" onclick="switchFtoL()">Lost</button>
+ 			<button id="lost" class="lost" onclick="switchFtoL()">Lost</button>
 			<button id="found" class="found" onclick="switchLtoF()">Found</button>
-<!-- 			<button id="account" class="account" onclick="window.location.href = 'account';"><i class="fa fa-user" aria-hidden="true"></i></button> -->
 	</div>
 	</div>
 	<div class="post">
 		{{#each posts}}
 		   <div class="individual" id="{{id}}">
-		   	  <p id="moreText">{{date}}</p>
+		   	  <p id="moreText" style="padding:10px;">{{date}}</p>
 		      <img src="{{image}}" class="img-responsive">
-		      <h1>{{name}}</h1>
-		      <a href = "tel:{{contact}}" style= "padding:5px;">Phone number: {{contact}}</a>
-		      <p>Description: {{description}}</p>
+		      <h1 style="padding:10px;">{{name}}</h1>
+		      <a href = "tel:{{contact}}" style= "padding:10px;">Phone number: {{contact}}</a>
+		      <p style="padding:10px;">Description: {{description}}</p>
 		      <!-- Add contact info -->
-            <span id="moreText"><p>Last Seen: {{lastseen}}</p><p>Date: {{date}}</p></span>
+            <span id="moreText" style="padding:10px;"><p>Last Seen: {{lastseen}}</p><p>Date: {{date}}</p></span>
 
             <button class="more"><i class="fa fa-angle-down"></i></button>
 		   </div>
