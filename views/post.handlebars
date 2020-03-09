@@ -14,10 +14,13 @@
 <body>
           <div class="back">
            <button onclick="window.location.href = '/lost';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
-           <h3>My Account</h3>
         </div>
     <form id="addPostForm" role="form" method="get" action="/add">
+        <div>
+          <h3>New Post</h3>
+          </div>
         <div class="form-group">
+          <br>
           <label for="name">Item Name:</label>
           <input type="text" class="form-control" id="name" placeholder="Item Name" name="name">
         </div>
@@ -32,23 +35,23 @@
 
         <div class="form-group">
           <label for="description">Description:</label>
-          <input type="text" class="form-control" id="description" placeholder="Description" name="description">
+          <input type="text" class="form-control" id="description" placeholder="Details about the Item" name="description">
         </div>
         
         <div class="form-group">
-          <label for="description">Last Location Seen:</label>
+          <label for="description">Last Seen / Dropped Off At:</label>
           <p class="op">(Optional)</p>
-          <input type="text" class="form-control" id="lastseen" placeholder="Last Location Seen" name="lastseen">
+          <input type="text" class="form-control" id="lastseen" placeholder="Last Location Seen Or Where You Dropped It Off" name="lastseen">
         </div>
         <div class="form-group">
           <label for="contact">Contact Info:</label>
-          <input type="text" class="form-control" id="contact" placeholder="Contact Info" name="contact">
+          <input type="text" class="form-control" id="contact" placeholder="Name, Phone Number, Email" name="contact">
         </div>
 
         <div class="form-group">
           <label for="image">Image:</label>
           <p class="op">(Optional)</p>
-          <input type="url" class="form-control" id="image" placeholder="image" name="image"><br><br>
+          <input type="url" class="form-control" id="image" placeholder="Picture of the Item" name="image"><br><br>
           <label for="newDate"></label>
           <input type="submit" id="submitBtn" class="btn btn-default" value="Add Item" onclick="date()"></input>
         </div>
