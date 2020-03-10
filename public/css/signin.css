@@ -27,7 +27,7 @@ h3 {
     font-size:18px;
 }
 
-input[type="file"]{
+input[type="url"]{
    margin: auto;
    font-size: 15px;
    width: 70%;
