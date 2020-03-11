@@ -3,6 +3,9 @@ $(document).ready(function() {
 })
 
 function init() {
+    var search = document.getElementById('myInput');
+    search.style.display = "inline";
+
    // after signing in, change button colors and URL
    if (window.location.href.indexOf('/lost') >= 0) {
       // document.getElementById("lost").style.backgroundColor = "#0b7dda";
@@ -152,5 +155,5 @@ function moreInfo(e) {
     }
     else{
       search.style.display= "none";
-    }
-  }*/
+    }*/
+  }
