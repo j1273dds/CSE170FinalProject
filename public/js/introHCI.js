@@ -59,6 +59,7 @@ function init() {
 function showDropDown(){
   console.log(1);
   document.getElementByClass("dropdown-content").toggle("show");
+  console.log(this);
 }
 
 // user clicks on Found
@@ -149,8 +150,10 @@ function moreInfo(e) {
 
     if(search.style.display == "none"){
       search.style.display = "inline";
+      $("button.search").html("<i class='fas fa-times'></i>");
     }
     else{
       search.style.display= "none";
+      $("button.search").html("<i class='fa fa-search'></i>");
     }
   }
