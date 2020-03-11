@@ -22,7 +22,7 @@
         <div class="form-group">
           <br>
           <label for="name">Item Name:</label>
-          <input type="text" class="form-control" id="name" placeholder="Item Name" name="name">
+          <input type="text" class="form-control" id="name" name="name">
         </div>
 
         <div class="form-group">
@@ -35,23 +35,24 @@
 
         <div class="form-group">
           <label for="description">Description:</label>
-          <input type="text" class="form-control" id="description" placeholder="Details about the Item" name="description">
+          <input type="text" class="form-control" id="description" name="description">
         </div>
         
         <div class="form-group">
           <label for="description">Last Seen / Dropped Off At:</label>
           <p class="op">(Optional)</p>
-          <input type="text" class="form-control" id="lastseen" placeholder="Last Location Seen Or Where You Dropped It Off" name="lastseen">
+          <input type="text" class="form-control" id="lastseen" name="lastseen"></input>
         </div>
         <div class="form-group">
           <label for="contact">Contact Info:</label>
-          <input type="text" class="form-control" id="contact" placeholder="Name, Phone Number, Email" name="contact">
+          <p class="extra">Name, Phone Number, Email</p>
+          <input type="text" class="form-control" id="contact" name="contact">
         </div>
 
         <div class="form-group">
           <label for="image">Image:</label>
           <p class="op">(Optional)</p>
-          <input type="file" class="form-control" id="image" placeholder="Picture of the Item" name="image"><br><br>
+          <input type="file" class="form-control" id="image" name="image"><br><br>
           <label for="newDate"></label>
           <input type="submit" id="submitBtn" class="btn btn-default" value="Add Item" onclick="date()"></input>
         </div>

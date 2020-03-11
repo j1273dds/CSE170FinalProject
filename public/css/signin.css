@@ -98,7 +98,7 @@ form .submit {
   display:flex;
 }
 form#signinForm {
-    margin-top: 75px;
+    margin-top: 50px;
 }
 input#image{
    margin: auto;
