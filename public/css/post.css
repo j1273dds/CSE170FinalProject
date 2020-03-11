@@ -30,14 +30,50 @@ h3 {
     background-color: white;
 }
 
+input[type="text"]{
+   margin: auto;
+   font-size: 15px;
+   width: 87%;
+   height: 30px;
+   border-color: transparent;
+   display: block;
+   padding:10px;
+   border-bottom:2px solid #2196F3;
+
+}
+
+input[type="file"]{
+   margin: auto;
+   font-size: 15px;
+   width: 87%;
+   height: 30px;
+   border-color: transparent;
+   display: block;
+   padding:10px;
+   border-bottom:2px solid #2196F3;
+
+}
 .op {
    display: inline;
    float: right;
    color: gray;
+   margin-right: 25px;
 }
 
-#LostBtn, #FoundBtn {
-  width: 49%;
+.extra {
+   display: inline;
+   float: right;
+   color: gray;
+   margin-right: 35px;
+} 
+
+#LostBtn {
+  width: 42%;
+  margin-left: 25px;
+}
+
+#FoundBtn {
+  width: 42%;
 }
 
 #submitBtn {
@@ -62,5 +98,6 @@ form#addPostForm{
 
 label {
   color: #2196F3;
-  font-size: 17px; 
+  font-size: 17px;
+  margin-left: 25px; 
 }

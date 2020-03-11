@@ -14,7 +14,7 @@ h3 {
   font-size: 17px;
   font-family: Verdana, Geneva, sans-serif;
   color:#2196F3;
-  margin-left:30px;
+  margin-left:45px;
 }
 
 .back button {
@@ -98,7 +98,7 @@ form .submit {
   display:flex;
 }
 form#signinForm {
-    margin-top: 75px;
+    margin-top: 50px;
 }
 input#image{
    margin: auto;
