@@ -9,7 +9,7 @@ function init() {
    // after signing in, change button colors and URL
    if (window.location.href.indexOf('/lost') >= 0) {
       // document.getElementById("lost").style.backgroundColor = "#0b7dda";
-      document.getElementById("lost").style.borderBottom = "6px solid white";
+      document.getElementById("lost").style.borderBottom = "3px solid white";
       
       let stateObj = {id:"1"};
       window.history.replaceState(stateObj, "Lost Items", "/lost");
@@ -35,25 +35,25 @@ function init() {
    } 
    if (window.location.href.indexOf('/found') >= 0) {
       // document.getElementById("found").style.backgroundColor = "#0b7dda";
-      document.getElementById("found").style.borderBottom = "6px solid white";
+      document.getElementById("found").style.borderBottom = "3px solid white";
 
       
    }
    if (window.location.href.indexOf('/sortFound') >= 0) {
       // document.getElementById("found").style.backgroundColor = "#0b7dda";
-      document.getElementById("found").style.borderBottom = "6px solid white";
+      document.getElementById("found").style.borderBottom = "3px solid white";
    }
    if (window.location.href.indexOf('/sortLost') >= 0) {
       // document.getElementById("lost").style.backgroundColor = "#0b7dda";
-      document.getElementById("lost").style.borderBottom = "6px solid white";    
+      document.getElementById("lost").style.borderBottom = "3px solid white";    
    }
    if (window.location.href.indexOf('/sortNewLost') >= 0) {
       // document.getElementById("lost").style.backgroundColor = "#0b7dda";
-      document.getElementById("lost").style.borderBottom = "6px solid white";
+      document.getElementById("lost").style.borderBottom = "3px solid white";
    }
    if (window.location.href.indexOf('/sortNewFound') >= 0) {
       // document.getElementById("found").style.backgroundColor = "#0b7dda";
-      document.getElementById("found").style.borderBottom = "6px solid white";      
+      document.getElementById("found").style.borderBottom = "3px solid white";      
    }            
    $(".post .individual button").click(moreInfo);
 }
@@ -147,16 +147,3 @@ function moreInfo(e) {
         }
   }
  }
- function myFunctionShow(){
-    var search = document.getElementById('myInput');
-    var header = document.getElementById('maintext');
-/*
-    if(search.style.display == "none"){
-      search.style.display = "inline";
-      $("button.search").html("<i class='fas fa-times'></i>");
-    }
-    else{
-      search.style.display= "none";
-
-    }*/
-  }
