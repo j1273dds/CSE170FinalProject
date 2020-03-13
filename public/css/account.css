@@ -1,7 +1,6 @@
 body{
   height: 100%;
   width: 100%;
-  background: linear-gradient(to bottom, #2196F3 0%, #2196F3 45%, white 45%, white 100%);
   overflow: auto;
 }
 h3 {
@@ -10,7 +9,7 @@ h3 {
    height: 60px;
    background-color: #2196F3;
    font-family: Verdana, Geneva, sans-serif;
-   padding-left: 30px;
+   padding-left: 28px;
    display:inline;
    font-weight: bold;
 }
@@ -55,7 +54,8 @@ h3 {
     width: 250px;
     background-color: #2196F3;
     margin: 20px auto;
-    margin-top: 310px;
+    position: absolute;
+    bottom: 10px;
     font-size: 20px;
     color: white;
     border: transparent;
@@ -63,9 +63,9 @@ h3 {
     border-left: none;
     cursor: pointer;
     text-align: center;
-    border-width: 2px;
+    /*border-width: 2px;
     border-color: white;
-    border-style: solid;
+    border-style: solid;*/
 }
 
 .back{
@@ -75,9 +75,11 @@ h3 {
     margin-bottom: 75px;
 }
 .accinfo1 {
-    margin-top: 10px;
-    margin-left:auto;
-    text-align:center;
+    background-color: #2196F3;
+    margin-top: -21px;
+    margin-left: auto;
+    text-align: center;
+    padding-bottom: 10px;
 }
 .img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img
 {
@@ -88,12 +90,13 @@ h3 {
 }
 .individual {
     background-color: #d0d0d0;
-    margin: 30px;
-    padding: 10px;
+    padding:10px;
 }
 .accinfo2 {
     margin-top: 10px;
     margin-left:20px;
+    margin-right: 20px;
+
 }
 button{
     width: 20%;
@@ -108,9 +111,13 @@ button{
     position:fixed;
     background-color: #2196F3;
     top:0px;
+    padding-bottom:9px;
   }
 .img{
+    width:100%;
     margin-top:70px;
+    background-color: #2196F3;
+    padding-bottom:20px;
 
 }
 .img img{
@@ -124,6 +131,9 @@ h1{
   color: white;
 }
 
+.individual h1 {
+    color: black;
+}
 
 h2{
   display:block;
@@ -136,6 +146,7 @@ h2{
 label{
   display:block;
   margin: auto;
-  font-size: 16px;
+  font-size: 19px;
   color: #2196F3;
+  margin-bottom: 10px;
 }
