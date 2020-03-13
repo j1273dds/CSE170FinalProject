@@ -50,14 +50,14 @@
 	<div class="post">
 		{{#each posts}}
 		   <div class="individual" id="{{id}}">
-		   	  <p id="moreText" style="padding:10px;">{{date}}</p>
+		   	  <p class="pad" id="moreText">{{date}}</p>
 		      <img src="{{image}}" class="img-responsive">
-		      <h1 style="padding:10px;">{{name}}</h1>
-		      <p style="padding:10px;">Description: {{description}}</p>
-		      <a style="padding:10px; text-decoration: underline">Contact Info</a></br></br>
-		      <a href = "tel:{{contact}}" style= "padding:10px;">Phone Number: {{contact}}</a>
+		      <h1 class="pad">{{name}}</h1>
+		      <p class="pad">Description: {{description}}</p>
+		      <a class="pad" style="text-decoration: underline;">Contact Info</a><br>
+		      <a class="pad" href = "tel:{{contact}}">{{contact}}</a><p><br></p>
 		      <!-- Add contact info -->
-            <span id="moreText" style="padding:10px;"><p>Last Seen: {{lastseen}}</p><p>Date: {{date}}</p></span>
+            <span class="span" id="moreText"><p class="span">Last Seen: {{lastseen}}</p><p class="span">Date: {{date}}</p></span>
 
             <button class="more"><i class="fa fa-angle-down"></i></button>
 		   </div>
