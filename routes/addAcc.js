@@ -8,7 +8,9 @@ exports.addAcc = function(request, response) {
 	var image = request.query.image;
 	var username = request.query.username;
 	var newPost = { "firstName":firstName , "lastName":lastName, "email":email,"username":username,"image":image,"phone":phone};
+	mylost.account.pop();
 	mylost.account.push(newPost);
+
 
 	response.render('account',mylost);
 }
