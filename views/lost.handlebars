@@ -24,7 +24,7 @@
 <body>
 	<div class="top">
 		<form class="example" action="account">
-	  		 <input type="text" id="myInput" onkeyup="myFunctionSearch()" placeholder="Search for items.." title="Type in a name">
+	  		 <input type="text" id="myInput" onkeyup="myFunctionSearch()" placeholder="Search for items..." title="Type in a name">
 	  		 <button id="account" class="account" onclick="window.location.href = 'account';"><i class="fa fa-user" aria-hidden="true"></i></button>
 <!-- 	  		 <button type = "button" class="search" onclick="myFunctionShow()"><i class="fa fa-search"></i></button>
  -->		</form>
@@ -50,13 +50,14 @@
 	<div class="post">
 		{{#each posts}}
 		   <div class="individual" id="{{id}}">
-		   	  <p id="moreText" style="padding:10px;">{{date}}</p>
-		      <img id="imagenFondo" class="img-responsive" src={{image}}>
-		      <h1 style="padding:10px;">{{name}}</h1>
-		      <a href = "tel:{{contact}}" style= "padding:10px;">Phone number: {{contact}}</a>
-		      <p style="padding:10px;">Description: {{description}}</p>
+		   	  <p class="pad" id="moreText">{{date}}</p>
+		      <img src="{{image}}" class="img-responsive">
+		      <h1 class="pad">{{name}}</h1>
+		      <p class="pad">Description: {{description}}</p>
+		      <a class="pad" style="text-decoration: underline;">Contact Info</a><br>
+		      <a class="pad" href = "tel:{{contact}}">{{contact}}</a><p><br></p>
 		      <!-- Add contact info -->
-            <span id="moreText" style="padding:10px;"><p>Last Seen: {{lastseen}}</p><p>Date: {{date}}</p></span>
+            <span class="span" id="moreText"><p class="span">Last Seen: {{lastseen}}</p><p class="span">Date: {{date}}</p></span>
 
             <button class="more"><i class="fa fa-angle-down"></i></button>
 		   </div>

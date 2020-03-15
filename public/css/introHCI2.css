@@ -15,7 +15,7 @@ html {
 body {
   height: 100%;
   overflow: auto;
-  background-color: #3f7daf;
+  background-color: #e9eaea;
 }
 
 .post {
@@ -46,7 +46,7 @@ button#lost {
     float: left;
     height: 35px;
     width: 150px;
-    FONT-WEIGHT: 200;
+    FONT-WEIGHT: 500;
     background-color: #2196F3;
     color: white;
     font-size: 23px;
@@ -58,7 +58,7 @@ button#found {
     float: left;
     height: 35px;
     width: 150px;
-    FONT-WEIGHT: 200;
+    FONT-WEIGHT: 500;
     background-color: #2196F3;
     color: white;
     font-size: 23px;
@@ -80,6 +80,7 @@ button#found {
 form.example input[type=text] {
   padding: 7px;
   font-size: 17px;
+  color: #2196F3;
   border: 1px solid transparent;
   float: left;
   width: 85%;
@@ -260,6 +261,7 @@ button.plus{
         -1px -15px 33.4px rgba(0, 0, 0, 0.086),
          20px 17px 80px rgba(0, 0, 0, 0.12);
     color:black;
+    margin-bottom: 10px;
 
 }
 
@@ -289,6 +291,7 @@ button.plus{
     cursor: pointer;
     text-align: center;
 }
+
 .moreText p{
   visibility:hidden;
 }
@@ -303,7 +306,7 @@ h1{
   font-family: Verdana, Geneva, sans-serif;
 }
 ::placeholder{
-  color:black;
+  color:#2196F3;
   }
   h1#maintext{
     font-size:20px;
@@ -315,3 +318,12 @@ h1{
     padding-bottom: 50px;
     background: #2196F3;
   }
+
+  .pad {
+  margin-left:15px;
+  margin-right:15px;
+}
+
+.span {
+  margin-left: 10px;
+}
